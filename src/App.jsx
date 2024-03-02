@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 
 import { Home } from './Components/Home'
 import { About } from './Components/About'
+import { LeftSidebar } from './Components/LeftSidebar'
 function App() {
 
   return (
@@ -11,19 +12,20 @@ function App() {
         id="mainwrapper"
         className="h-full flex flex-col items-center justify-center selection:bg-black selection:text-muted scroll-smooth"
       >
-
+        <LeftSidebar/>
       <motion.div
       className='absolute w-2/6 -right-24 top-0 text-accentylt z-1'
+      layout
       initial={{
-        y:-200
+        x:2000,
+        opacity:0
       }}
       animate={{
-        y:-95
+        x:50,
+        opacity:1
       }}
       transition={{
-        duration: 2.5,
         type: "spring",
-        mass:5
       }}
       >
       <Code
@@ -31,11 +33,11 @@ function App() {
       weight="light"
       />
       </motion.div> 
-      <div className='w-screen h-screen flex justify-center items-center py-px'>
+      <div className='w-screen h-screen flex justify-center items-center py-4 px-16'>
       <Home />
       </div>
-      <div className='w-screen h-screen py-px'>
-      <About />
+      <div className='w-screen h-screen '>
+      <About></About>
       </div>
     
     

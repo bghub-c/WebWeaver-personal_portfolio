@@ -11,15 +11,12 @@ export function About(){
             <motion.section
         className="w-11/12  z-20 grid grid-rows-2 backdrop-blur-sm backdrop-brightness-100 hover:rounded-2xl duration-200 border-l border-r border-accentylt transition-all"
         initial={{
-          scale:0,
+          scale:1,
         }}
         animate={{
           scale:1,
         }}
-        transition={{
-          duration: 1.5,
-          type: "spring"
-        }}
+        
       >
         <span className=" flex flex-col opacity-100">
           {spaneleh("<h2 id='Hello_world'>","text-3xl text-white mt-10 ml-10 vt323h")}
