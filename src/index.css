@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .pl{
-  padding-left: 4%;
+  padding-left: 5%;
 }
 .py-px{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 09%;
+  padding-right: 09%;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
-:root {
+body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
