@@ -10,7 +10,7 @@ function App() {
     >
       <div className="absolute w-screen h-screen top-0 text-accentylt z-1">
         <svg
-        className="hover:text-white transition-all duration-700 "
+        className="bg-white text-zinc-900 hover:bg-bkgggg hover:text-white transition-all duration-700 "
           id="visual"
           viewBox="0 0 1440 824"
           width="100vw"
@@ -18,13 +18,13 @@ function App() {
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
         >
-          <g >
+          <g className="opacity-50">
             <g transform="translate(800, 40) rotate(65) scale(0.5)">
               <path
                 d="M0 -129.5L112.2 64.8L-112.2 64.8Z"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="0.2%"
+                strokeWidth="0.5%"
               ></path>
             </g>
             <g transform="translate(650 45) rotate(25)">
@@ -32,7 +32,7 @@ function App() {
                 d="M0 -129.5L112.2 64.8L-112.2 64.8Z"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="0.2%"
+                strokeWidth="0.5%"
               ></path>
             </g>
             <g transform="translate(267 490)">
@@ -41,7 +41,9 @@ function App() {
                 y="-50"
                 width="100"
                 height="100"
-                fill="#297EA6"
+                stroke="currentColor"
+                strokeWidth="0.5%" 
+                fill="none"
               ></rect>
             </g>
             <g transform="translate(750 600)">
@@ -51,7 +53,7 @@ function App() {
                 r="150"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="0.2%"
+                strokeWidth="0.5%"
               ></circle>
             </g>
             <g transform="translate(380 120) rotate(20)">
@@ -61,6 +63,7 @@ function App() {
                 width="55"
                 height="55"
                 stroke="currentColor"
+                strokeWidth="0.5%" 
                 fill="none"
               ></rect>
             </g>
@@ -70,8 +73,7 @@ function App() {
                 cy="0"
                 r="100"
                 stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
+                strokeWidth="0.5%"                fill="none"
               ></circle>
             </g>
             <g transform="translate(595 300) rotate(78)">
@@ -81,6 +83,7 @@ function App() {
                 width="30"
                 height="30"
                 stroke="currentColor"
+                strokeWidth="0.5%" 
                 fill="none"
               ></rect>
             </g>
@@ -90,6 +93,7 @@ function App() {
                 cy="0"
                 r="30"
                 stroke="currentColor"
+                strokeWidth="0.5%" 
                 fill="none"
               ></circle>
             </g>
@@ -100,6 +104,7 @@ function App() {
                 width="50"
                 height="50"
                 stroke="currentColor"
+                strokeWidth="0.5%" 
                 fill="none"
               ></rect>
             </g>
