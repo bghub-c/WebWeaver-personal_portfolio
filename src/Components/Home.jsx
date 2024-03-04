@@ -64,8 +64,8 @@ export function Home() {
               animate="visible"
               whileHover="visible"
               transition={{
-                default: {delay:4, duration: 2.5, ease: "easeInOut" },
-                fill: {delay:4.4, duration: 3.5, ease: [1, 0, 0.8, 1] },
+                default: {delay:4.5, duration: 2.5, ease: "easeInOut" },
+                fill: {delay:5, duration: 3.5, ease: [1, 0, 0.8, 1] },
               }}
             />
           </motion.svg>
