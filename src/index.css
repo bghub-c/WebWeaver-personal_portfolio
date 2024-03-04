@@ -31,8 +31,18 @@ body {
   font-weight: 1000;
   font-style: normal;
 }
+
+.item {
+  width: 56%;
+  overflow: visible;
+  stroke: #ffffff;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
 .app{
-  background-image: url("/future-grid.a0cd4189.webp");
+  background-image: url("../src/assets/5e41e73ec2af60cf5cc94e67_website landing.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
