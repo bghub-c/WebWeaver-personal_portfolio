@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: { 
+      transitionDelay: {
+        '5000': '5000ms',
+      },
       letterSpacing: {
         widestest: '.28em',
         zaydawide: '.35em',

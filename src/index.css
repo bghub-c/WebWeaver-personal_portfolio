@@ -32,10 +32,17 @@ body {
   font-style: normal;
 }
 
+  #Otherparts {
+    height: calc(100vh ); /* Adjust the height according to your needs */
+    overflow-y: auto;
+  }
+.h-nav{
+  height: 12%;
+}
 .item {
   width: 56%;
   overflow: visible;
-  stroke: #ffffff;
+  stroke: #000814;
   stroke-width: 5;
   stroke-linejoin: round;
   stroke-linecap: round;

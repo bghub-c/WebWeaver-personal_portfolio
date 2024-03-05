@@ -9,21 +9,24 @@ export function Home() {
     },
     visible: {
       pathLength: 1,
-      fill: "rgba(255, 255, 255, 1)",
+      fill: "#000814",
     },
   };
   return (
     <>
       <section className="w-full grid-flow-row grid-rows-auto ml-1	z-2 border-accentylt overflow-hidden">
         <motion.span
+          layout
           initial={{
-            y: -100,
+            y: -500,
+            opacity: 0,
           }}
           animate={{
             y: 0,
+            opacity: 1,
           }}
           transition={{
-            delay: 1.95,
+            delay: 1.5,
           }}
           className="w-full h-1/2 pl flex flex-col justify-center"
         >
@@ -35,12 +38,14 @@ export function Home() {
         <motion.span
           initial={{
             y: 500,
+            opacity: 0,
           }}
           animate={{
             y: 0,
+            opacity: 1,
           }}
           transition={{
-            delay: 2.9,
+            delay: 2.5,
           }}
           className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
         >
@@ -52,20 +57,19 @@ export function Home() {
         <span className="grid place-content-center">
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            viewBox="0 0 700 824"
-            className="item"
+            width="70"
+            viewBox="0 0 300 300"
+            className="item "
           >
-            {/* m 290 0 v 200 h 160 l -180 150 l -170 -150 h 160 v -200 h 30  */}
             <motion.path
-              d="m 290 0 v 200 h 160 l -180 150 l -170 -150 h 160 v -200 h 30"
+              d="m 170 20 v 150 l 30 -10 l -30 50 l -30 -50 l 30 10 v -150 h 0 "
               variants={icon}
               initial="hidden"
               animate="visible"
               whileHover="visible"
               transition={{
-                default: {delay:4.5, duration: 2.5, ease: "easeInOut" },
-                fill: {delay:5, duration: 3.5, ease: [1, 0, 0.8, 1] },
+                default: { delay: 5, duration: 2.5, ease: "easeInOut" },
+                fill: { delay: 5, duration: 3.5, ease: [1, 0, 0.8, 1] },
               }}
             />
           </motion.svg>
