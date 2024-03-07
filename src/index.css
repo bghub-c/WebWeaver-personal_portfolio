@@ -37,7 +37,17 @@ body {
     overflow-y: auto;
   }
 .h-nav{
-  height: 12%;
+  height: 20%;
+  padding-left: 5%;
+  padding-top: 1.7%;
+  padding-right: 3%;
+}
+.devi{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform-origin: 0%;
 }
 .item {
   width: 56%;
