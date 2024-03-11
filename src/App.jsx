@@ -7,28 +7,40 @@ import { MainContent } from "./Components/MainContent";
 
 function App() {
   const { scrollY } = useScroll();
-  const scaale=useTransform(scrollY, [0,824], [1,1.02]);
-  const bgcol = useTransform(scrollY, [0,1000], ["rgb(250,250,250)", "#000814"]);
+  const scaale = useTransform(scrollY, [0, 824], [1, 1.02]);
+  const bgcol = useTransform(
+    scrollY,
+    [0, 1000],
+    ["rgb(250,250,250)", "#000814"]
+  );
   return (
-    <div id="mainwrapper" className="w-screen h-full relative text-white  flex flex-col  selection:bg-black selection:text-muted scroll-smooth">
-      <Navbar />
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.25 }}
+        id="mainwrapper"
+        className="w-screen h-full relative text-white  flex flex-col  selection:bg-black selection:text-muted scroll-smooth"
+      >
+        <Navbar />
         <motion.div
-          style={{backgroundColor:bgcol,  scale:scaale }}
+          style={{ backgroundColor: bgcol, scale: scaale }}
           transition={{
-            type:'spring'
+            duration: 0.25,
+            ease: "easeInout",
+            type: "spring",
           }}
-          
-          className="transition-color ease-in-out fixed top-0 -z-30 app w-full h-screen flex justify-start items-end"
+          className="transition-all fixed top-0 -z-10 app w-full h-screen flex justify-start items-end"
           id="home"
         >
           <Home />
         </motion.div>
-        <div className="h-screen w-scree">
+        <div className="h-screen w-screen"></div>
+        <div id="Otherparts" className="w-screen h-screen bg-slate-500">
+          <MainContent />
         </div>
-      <div id="Otherparts" className="w-screen h-screen bg-bkgg">
-        <MainContent />
-      </div>
-    </div>
+      </motion.div>
+    </>
   );
 }
 
