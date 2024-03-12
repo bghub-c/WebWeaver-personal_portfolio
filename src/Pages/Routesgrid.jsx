@@ -24,7 +24,7 @@ export function Routesgrid() {
       >
           <div className="flex flex-col smartphone:my-3 smartphone:items-center smartphone:justify-center">
             <h1
-              className={`text-8xl laptop:text-5xl smartphone:text-4xl drop-shadow-xl text-zinc-700 laptop:mt-auto smartphone:mx-5 mx-14 ${
+              className={` text-7xl smartphone:text-5xl drop-shadow-xl text-zinc-700 laptop:mt-auto smartphone:mx-5 mx-14 ${
                 initiall ? "translate-x-3" : "translate-x0"
               } transition-all duration-700 ease-in-out`}
             >
@@ -62,14 +62,14 @@ export function Routesgrid() {
             change1(false);
           }} className="bg-zinc-900 h-full flex flex-col rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
           <h1
-            className={` text-white text-5xl smartphone:text-xl  mt-auto mx-6 ${
+            className={`my-1 text-white laptop:text-5xl  smartphone:text-5xl  mt-auto mx-6 ${
               initial1 ? "translate-x-2" : "translate-x0"
             } transition-all duration-700 ease-in-out`}
           >
           Skill <span className="text-blue-500">Palette</span> 
           </h1>
           <h2
-            className={`text-h2s text-white mb-auto mx-8 flex gap-2 items-center ${
+            className={`text-md text-white mb-auto mx-9 flex gap-2 items-center ${
               initial1 ? "translate-x-4" : "translate-x0"
             } transition-all duration-700 ease-in-out`}
           >    
@@ -94,14 +94,14 @@ export function Routesgrid() {
           change2(false);
         }} >
         <h1
-          className={` text-white text-h1s mt-auto mx-6 ${
+          className={`my-1 laptop:text-5xl  smartphone:text-5xl text-white mt-auto mx-6 ${
             initial2 ? "translate-x-2" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >
         X-<span className="text-zinc-900">Tras</span> 
         </h1>
         <h2
-          className={`text-h2s text-white mb-auto mx-8 flex gap-2 items-center ${
+          className={`text-md text-white mb-auto mx-8 flex gap-2 items-center ${
             initial2 ? "translate-x-4" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >    
@@ -124,18 +124,18 @@ export function Routesgrid() {
           change3(false);
         }} >
         <h1
-          className={` text-white text-h1 mt-auto mx-14 ${
+          className={` my-1 text-white laptop:text-5xl  laptop:mt-auto smartphone:mx-5  mx-14 ${
             initial3 ? "translate-x-2" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >
         My<span className="text-zinc-800"> Work</span> 
         </h1>
         <h2
-          className={`text-h2 text-white mb-auto mx-16 flex gap-2 items-center ${
+          className={`text-md text-white mb-auto smartphone:mx-8 mx-16 flex gap-2 items-center ${
             initial3 ? "translate-x-4" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >    
-          Stuff that I&#x27;m into
+          Work that I&#x27;m into
           <ArrowCircleRight
             className={`text-zinc-800 transition-all ease-in-out duration-700 ${
               initial3 ? "translate-x-2" : "translate-x0 "
