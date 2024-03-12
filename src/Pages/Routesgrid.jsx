@@ -11,7 +11,7 @@ export function Routesgrid() {
   return (
     <>
     <motion.div initial={{opacity:0}} whileInView={{opacity:1}} exit={{opacity:0}} transition={{duration:0.75,ease:"easeInOut"}} className="h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col">
-      <Link to="/Introduction" className="bg-red-600 smartphone:h-1/5 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+      <Link to="/Introduction" className="bg-red-600 smartphone:h-1/4 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section
         id="abt"
           onMouseOver={() => {
@@ -53,7 +53,7 @@ export function Routesgrid() {
             alt="hh"
           />
       </section></Link>
-      <Link to="/TalentArsenal" className="smartphone:h-1/5 row-start-2 col-start-6 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+      <Link to="/TalentArsenal" className="smartphone:h-1/4 row-start-2 col-start-6 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section id="skills"
           onMouseOver={() => {
             change1(true);
@@ -83,7 +83,7 @@ export function Routesgrid() {
             />
           </h2>
       </section></Link>
-      <Link className="smartphone:h-1/5 row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+      <Link className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section
         id="projects"
         className="bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
@@ -116,7 +116,7 @@ export function Routesgrid() {
         </h2></section></Link>
       <section
         id="X-tras"
-        className="bg-red-600 smartphone:h-1/5 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+        className="bg-red-600 smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
         onMouseOver={() => {
           change3(true);
         }}
