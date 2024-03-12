@@ -10,8 +10,8 @@ export function Routesgrid() {
   const [initial3, change3] = useState(false);
   return (
     <>
-    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} exit={{opacity:0}} transition={{duration:0.75,ease:"easeInOut"}} className="h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-16 smartphone:flex flex-col">
-      <Link to="/Introduction" className="bg-red-600 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} exit={{opacity:0}} transition={{duration:0.75,ease:"easeInOut"}} className="h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col">
+      <Link to="/Introduction" className="bg-red-600 smartphone:h-1/5 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section
         id="abt"
           onMouseOver={() => {
@@ -53,7 +53,7 @@ export function Routesgrid() {
             alt="hh"
           />
       </section></Link>
-      <Link to="/TalentArsenal" className=" row-start-2 col-start-6 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+      <Link to="/TalentArsenal" className="smartphone:h-1/5 row-start-2 col-start-6 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section id="skills"
           onMouseOver={() => {
             change1(true);
@@ -62,7 +62,7 @@ export function Routesgrid() {
             change1(false);
           }} className="bg-zinc-900 h-full flex flex-col rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
           <h1
-            className={` text-white text-h1s mt-auto mx-6 ${
+            className={` text-white text-5xl smartphone:text-xl  mt-auto mx-6 ${
               initial1 ? "translate-x-2" : "translate-x0"
             } transition-all duration-700 ease-in-out`}
           >
@@ -83,7 +83,7 @@ export function Routesgrid() {
             />
           </h2>
       </section></Link>
-      <Link className=" row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
+      <Link className="smartphone:h-1/5 row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section
         id="projects"
         className="bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
@@ -116,7 +116,7 @@ export function Routesgrid() {
         </h2></section></Link>
       <section
         id="X-tras"
-        className="bg-red-600 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+        className="bg-red-600 smartphone:h-1/5 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
         onMouseOver={() => {
           change3(true);
         }}
