@@ -62,14 +62,14 @@ export function Routesgrid() {
             change1(false);
           }} className="bg-zinc-900 h-full flex flex-col rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
           <h1
-            className={`my-1 text-white laptop:text-5xl  smartphone:text-5xl  mt-auto mx-14 smartphone:mx-6 ${
+            className={`my-1 text-white laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6 ${
               initial1 ? "translate-x-2" : "translate-x0"
             } transition-all duration-700 ease-in-out`}
           >
           Skill <span className="text-blue-500">Palette</span> 
           </h1>
           <h2
-            className={`text-md text-white mb-auto mx-20 smartphone:mx-10 flex gap-2 items-center ${
+            className={`text-md text-white mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center ${
               initial1 ? "translate-x-4" : "translate-x0"
             } transition-all duration-700 ease-in-out`}
           >    
@@ -94,14 +94,14 @@ export function Routesgrid() {
           change2(false);
         }} >
         <h1
-          className={`my-1 laptop:text-5xl  smartphone:text-5xl text-white mt-auto mx-14 smartphone:mx-6  ${
+          className={`my-1 laptop:text-5xl  smartphone:text-5xl text-white mt-auto mx-10 smartphone:mx-6  ${
             initial2 ? "translate-x-2" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >
         X-<span className="text-zinc-900">Tras</span> 
         </h1>
         <h2
-          className={`text-md text-white mb-auto mx-20 smartphone:mx-10 flex gap-2 items-center ${
+          className={`text-md text-white mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center ${
             initial2 ? "translate-x-4" : "translate-x0"
           } transition-all duration-700 ease-in-out`}
         >    
