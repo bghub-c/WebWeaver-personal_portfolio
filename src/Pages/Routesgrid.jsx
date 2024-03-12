@@ -10,7 +10,7 @@ export function Routesgrid() {
   const [initial3, change3] = useState(false);
   return (
     <>
-    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} exit={{opacity:0}} transition={{duration:0.75,ease:"easeInOut"}} className="h-screen w-screen grid grid-cols-8 grid-rows-8 smartphone:mt-16 smartphone:flex flex-col gap-4 ">
+    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} exit={{opacity:0}} transition={{duration:0.75,ease:"easeInOut"}} className="h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-16 smartphone:flex flex-col">
       <Link to="/Introduction" className="bg-red-600 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out">
       <section
         id="abt"
@@ -20,18 +20,18 @@ export function Routesgrid() {
           onMouseLeave={() => {
             change(false);
           }}
-          className="bg-white h-full text-slate-950 flex smartphone:flex-col-reverse smartphone:justify-center items-center  rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+          className="bg-white  h-full text-slate-950 flex justify-between items-center  rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
       >
-          <div className="flex flex-col smartphone:flex-row smartphone:items-center smartphone:justify-center">
+          <div className="flex flex-col smartphone:my-3 smartphone:items-center smartphone:justify-center">
             <h1
-              className={`text-h1 drop-shadow-xl text-zinc-700 laptop:mt-auto mx-14 ${
+              className={`text-8xl laptop:text-5xl smartphone:text-4xl drop-shadow-xl text-zinc-700 laptop:mt-auto smartphone:mx-5 mx-14 ${
                 initiall ? "translate-x-3" : "translate-x0"
               } transition-all duration-700 ease-in-out`}
             >
               About <span className="text-red-600">Me!</span> 
             </h1>
             <h2
-              className={`text-h2 text-zinc-700 mb-auto mx-16 flex gap-1 items-center ${
+              className={`text-lg laptop:text-md text-zinc-700 mb-auto smartphone:mx-5 mx-16 flex gap-1 items-center ${
                 initiall ? "translate-x-5" : "translate-x0"
               } transition-all duration-700 ease-in-out`}
             >
@@ -47,7 +47,7 @@ export function Routesgrid() {
           </div>
           <img
             src="https://cdn.jsdelivr.net/gh/alohe/memojis/png/memo_23.png"
-            className={`h-3/4  drop-shadow-2xl transition-all duration-700 ease-in-out ${
+            className={`h-3/4 smartphone:h-20  drop-shadow-2xl transition-all duration-700 ease-in-out${
               initiall ? "scale-105" : "translate-x0 "
             }`}
             alt="hh"

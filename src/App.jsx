@@ -36,8 +36,9 @@ function App() {
           <Home />
         </motion.div>
         <div className="h-screen w-screen"></div>
+        
         <div id="Otherparts" className="w-screen h-screen bg-slate-500">
-          <MainContent />
+        <MainContent />
         </div>
       </motion.div>
     </>
