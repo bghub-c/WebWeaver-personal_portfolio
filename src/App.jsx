@@ -8,17 +8,16 @@ import { Skills } from "./Pages/Skills"
 import { Routes, Route, useLocation  } from "react-router-dom";
 import {AnimatePresence , useScroll, useTransform} from "framer-motion"
 function App() {
-  
   const { scrollY }=useScroll();
-  const bgcol=useTransform(scrollY, [0,1080], ["#edf2f4","#0d1b2a"]);
-  const scalee=useTransform(scrollY, [0,1080], [1,1.05]);
+  const background=useTransform(scrollY, [0,980], ["#8d99ae", "rgb(22,25,27)" ]);
+  const scale=useTransform(scrollY, [0,1080], [1,1.02]);
   const location=useLocation();
   const divdisplay=location.pathname=="/"?"view":"hidden";
   return (
     <><Navbar />
-    <div  style={{scale:scalee, backgroundColor:bgcol}} className={`app w-screen h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
+    <motion.div  style={{backgroundColor:background , scale}} className={` transition-all duration-300 ease-in-out app w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
       <Home></Home>
-    </div>
+    </motion.div>
     <div className={`h-screen ${divdisplay}`}></div>
       <motion.div
         initial={{ opacity: 0 }}

@@ -75,6 +75,11 @@ body {
 .app2{
   background-image: repeating-linear-gradient(90deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(15,0%,62%,0.05) 0px, hsla(15,0%,62%,0.05) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, hsla(15,0%,62%,0.07) 0px, hsla(15,0%,62%,0.07) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, hsla(15,0%,62%,0.07) 0px, hsla(15,0%,62%,0.07) 1px,transparent 1px, transparent 52px),linear-gradient(0deg, rgb(22,25,27),rgb(22,25,27));
 }
+.gpu-accelerate {
+  transform: translateZ(0); /* Force GPU acceleration */
+  opacity: 0.99; /* Opacity also triggers GPU acceleration */
+  filter: blur(0); /* Filters can trigger GPU acceleration */
+}
 .app{
    background-image: url("./assets/5e41e73ec2af60cf5cc94e67_website landing.png");
   background-repeat: no-repeat;
