@@ -13,7 +13,7 @@ export function Navbar(){
         transition={{
             delay:0.5
         }}
-        className="w-screen h-nav  text-bkggg flex tablet:flex-col justify-between items-center sticky top-0">
+        className="w-screen h-nav  text-white flex tablet:flex-col justify-between items-center sticky top-0">
             <h1 className="vt323h  text-5xl">{"</ "}MohdBilal{">"}</h1>
             <ul className="flex backdrop-blur-lg">
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200 text-white p-3/4">1st</li>

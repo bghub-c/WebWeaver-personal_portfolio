@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 export function Home() {
+  
   const icon = {
     hidden: {
       pathLength: 0,
@@ -9,12 +10,12 @@ export function Home() {
     },
     visible: {
       pathLength: 1,
-      fill: "#000814",
+      fill: "#2b2d42",
     },
   };
   return (
     <>
-      <section className="w-full grid-flow-row grid-rows-auto ml-1	z-2 border-accentylt overflow-hidden">
+      <section className="w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
         <motion.span
           layout
           initial={{
@@ -30,7 +31,7 @@ export function Home() {
           }}
           className="w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-accentylt vt323">
+          <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-black vt323">
             {"Nice To See You!"}
           </p>
         </motion.span>
@@ -49,7 +50,7 @@ export function Home() {
           }}
           className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
         >
-          <p className="pl drop-shadow-xl text-5xl tracking-wide laptop:text-3xl text-accentylt vt323">
+          <p className="pl drop-shadow-xl text-5xl tracking-wide laptop:text-3xl text-back vt323">
             👋 Hi! My name is Mohd Bilal <br /> and I&#x27;m a Frontend web
             developer
           </p>

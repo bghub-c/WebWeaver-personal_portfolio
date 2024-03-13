@@ -8,6 +8,7 @@ export function Routesgrid() {
   const [initial1, change1] = useState(false);
   const [initial2, change2] = useState(false);
   const [initial3, change3] = useState(false);
+  
   return (
     <>
       <motion.div
@@ -15,7 +16,7 @@ export function Routesgrid() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75, ease: "easeInOut" }}
-        className="h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
+        className="app2 h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
       >
         <Link
           to="/Introduction"
@@ -135,7 +136,7 @@ export function Routesgrid() {
           </section>
         </Link>
         <section
-          id="X-tras"
+          id="Work"
           className="bg-red-600 smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
           onMouseOver={() => {
             change3(true);
