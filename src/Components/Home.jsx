@@ -32,7 +32,7 @@ export function Home() {
           }}
           className="w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-whitee vt323">
+          <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-whitee ubuntu">
             {"Nice To See You!"}
           </p>
         </motion.span>
@@ -53,7 +53,7 @@ export function Home() {
           }}
           className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
         >
-          <p className="pl drop-shadow-xl text-5xl tracking-wide laptop:text-3xl text-whitee vt323">
+          <p className="pl drop-shadow-xl text-5xl tracking-wide laptop:text-3xl text-whitee font-semibold ibm-plexregular ">
             👋 Hi! My name is Mohd Bilal <br /> and I&#x27;m a Frontend web
             developer
           </p>

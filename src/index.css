@@ -38,24 +38,10 @@ body {
   font-weight: 1000;
   font-style: normal;
 }
-.text-h1{
-  font-size: 5vw;
-  line-height: 13vh;
-}
-.text-h1s{
-  font-size: 3.5vw;
-  line-height: 10vh;
-}
-.text-h2s{
-  font-size: 0.9vw; 
-}
-.text-h2{
-  font-size: 1vw; 
-}
 .h-nav{
   height: 20%;
   padding-left: 5%;
-  padding-top: 1.7%;
+  padding-top: 0.75%;
   padding-right: 3%;
 }
 .devi{
