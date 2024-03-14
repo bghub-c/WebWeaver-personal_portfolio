@@ -15,7 +15,7 @@ export function Home() {
   };
   return (
     <>
-      <section className="w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
+      <section className="w-full  h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
         <motion.span
           layout
           initial={{
