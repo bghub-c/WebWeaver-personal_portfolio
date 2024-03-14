@@ -8,7 +8,7 @@ export function Introduction() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="h-full w-screen flex justify-center bg-zinc-800"
+        className="h-full w-screen flex justify-center bg-black"
       >
         <div className="w-5/12">
             <h1  className="text-8xl coolfont ml-6 mt-60 text-whitee flex items-end">Hello There <span className="text-redd ml-4">!</span></h1>
