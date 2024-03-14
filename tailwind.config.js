@@ -10,6 +10,7 @@ export default {
         '5000': '5000ms',
       },
       letterSpacing: {
+        widestestcum: '.18em',
         widestest: '.28em',
         zaydawide: '.35em',
       },
@@ -39,8 +40,6 @@ export default {
       greydk:"#8d99ae",
       greydkk:"#2b2d42",
       greydkkk:"#0d1b2a",
-      accenty:"#ffc300",
-      accentylt:"#ffd60a",
       insta:"#DD2A7B",
       fb:"#3B5998",
       watspp:"#25D366",
