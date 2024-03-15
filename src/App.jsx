@@ -28,7 +28,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.25 }}
         id="mainwrapper"
-        className="w-screen h-full relative text-white bg-black flex flex-col  selection:bg-whitee selection:text-zinc-600 YscrollYProgress-smooth"
+        className="w-screen h-full relative text-white bg-black flex flex-col scroll-smooth"
       >
         <AnimatePresence>
           <Routes location={location} key={location.key}>

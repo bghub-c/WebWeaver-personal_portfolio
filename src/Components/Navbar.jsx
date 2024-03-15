@@ -5,8 +5,8 @@ import { InstagramLogo, UserCircle,TwitterLogo,GithubLogo,LinkedinLogo,ArrowCirc
 export function Navbar({loc}){
     console.log(loc)
     return(
-        <div className="flex transition-transform">
-        <Link to="/" className={`${loc?"view":"hidden"} text-white hover:text-green-500 my-auto mt-7 flex justify-center items-center`} ><ArrowCircleLeft size={32} weight="duotone" /></Link>
+        <div className="flex ">
+        <Link to="/" className={`${loc?"view":"hidden"} text-white hover:text-green-500 flex justify-center items-center`} ><ArrowCircleLeft size={32} weight="duotone" /></Link>
         <motion.nav 
         initial={{
             y:-200
