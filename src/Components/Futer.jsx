@@ -1,5 +1,0 @@
-export default function Futer(){
-    return(
-        <div className="w-full text-white bg-teal-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vitae, accusantium ab est tempora quasi repudiandae ipsa ratione deleniti nihil unde expedita ut dicta autem saepe hic obcaecati dignissimos vel molestias soluta ad illo. Quo suscipit inventore, explicabo cum enim eligendi tempore odio natus placeat? Odit veniam commodi quidem necessitatibus sint ut quia cum est ad aperiam. Placeat tempora repudiandae rerum sit recusandae, aspernatur animi voluptatibus, itaque voluptatum amet ducimus reprehenderit enim cum molestiae, in eaque a deserunt! Aut doloremque labore fuga, autem velit, repellat a harum obcaecati possimus omnis tempore, impedit vel necessitatibus nemo cumque accusamus unde quos ea. drgsdfgvHloremello</div>
-    )
-}

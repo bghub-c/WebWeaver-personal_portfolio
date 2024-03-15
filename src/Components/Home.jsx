@@ -36,7 +36,6 @@ export function Home() {
             {"Nice To See You!"}
           </p>
         </motion.span>
-
         <motion.span
           initial={{
             y: 500,
