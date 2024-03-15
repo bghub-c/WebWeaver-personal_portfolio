@@ -3,10 +3,10 @@ import { HandWaving, LinkedinLogo,InstagramLogo, ArrowCircleUpRight } from "@pho
 export function Futter(){
 return(
     <div className="bg-black w-screen flex text-whitee  justify-center">
-    <motion.section id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white  w-8/12">
-        <div className="ml-5 p-2 mt-7">
-        <h1 className="flex smartphone:flex-col smartphone:text-7xl items-end text-8xl ubuntu">Drop a hello!<HandWaving className="ml-2 smartphone:hidden" size={100} weight="duotone" /></h1>
-        <h2 className="text-2xl ml-8 py-3 ibm-plex">Lets create dope stuff together!</h2>
+    <motion.section id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white mb-4  w-8/12">
+        <div className="ml-5 p-2 mt-7 smartphone:items-center">
+        <h1 className="flex smartphone:flex-col smartphone:text-7xl items-end smartphone:items-center text-8xl ubuntu">Drop a hello!<HandWaving className="ml-2 smartphone:hidden" size={100} weight="duotone" /></h1>
+        <h2 className="text-2xl smartphone:text-lg ml-8 smartphone:ml-0 py-3 ibm-plex">Lets create dope stuff together!</h2>
         </div>
         <div className="flex flex-col justify-start smartphone:justify-center">
         <ul className="flex smartphone:justify-center ">
