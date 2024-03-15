@@ -15,7 +15,7 @@ function App() {
   const divdisplay = location.pathname == "/" ? "view" : "hidden";
   return (
     <>
-      <Navbar />
+      <Navbar loc={location.pathname != "/"}/>
       <motion.div
         style={{ scale }}
         className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}
