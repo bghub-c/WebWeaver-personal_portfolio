@@ -105,7 +105,7 @@ export function Routesgrid() {
             </h2>
           </motion.section>
         </Link>
-        <Link className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out">
+        <Link to="/Extras" className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out">
           <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.6, type:"tween", duration:0.35}}
             id="projects"
             className="bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"

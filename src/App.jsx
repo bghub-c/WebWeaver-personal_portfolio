@@ -6,6 +6,7 @@ import { Introduction } from "./Pages/Introduction";
 import { Routesgrid } from "./Pages/Routesgrid";
 import { Home } from "./Components/Home";
 import { Skills } from "./Pages/Skills";
+import { X_tras } from "./Pages/X_tras";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, useScroll, useTransform } from "framer-motion";
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/" element={<Routesgrid />}></Route>
             <Route path="/Introduction" element={<Introduction />}></Route>
             <Route path="/TalentArsenal" element={<Skills />}></Route>
+            <Route path="/Extras" element={<X_tras />}></Route>
           </Routes>
         </AnimatePresence>
       </motion.div>
