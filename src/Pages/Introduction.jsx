@@ -9,15 +9,15 @@ export function Introduction() {
         exit={{ opacity: 0 }}
         className="h-full w-screen flex justify-center bg-black"
       >
-        <div className="w-1/2">
-          <h1 className="text-7xl coolfont ml-6 mt-60 text-whitee flex items-end">
-            Hello There <span className="text-redd ml-4">!</span>
+        <div className="w-1/2 smartphone:w-11/12">
+          <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 text-whitee flex items-end">
+            Hello There <span className="text-redd ml-4 h-full">!</span>
           </h1>
           <motion.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.8, duration: 0.3, type: "spring" }}
-            className=" mt-16 text-3xl text-whitee ubuntu"
+            className=" mt-16 text-3xl smartphone:text-lg text-whitee ubuntu"
           >
             Ahoy! <span className="coolfont mr-2 ml-2 text-redd">Mohd Bilal</span>, your web wizard from Lucknow, India. Currently enrolled in B.Tech .
             <span className=" tracking-widestestcum ml-1">Crafting</span>,{" digital marvels? You bet! Join me, and"} <br /> {"let's "}
@@ -29,7 +29,7 @@ export function Introduction() {
             transition={{ delay: 1.2, duration: 0.4, type: "spring" }}
             className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row"
           >
-            <p className="text-whitee  text-2xl tracking-tighter mt-6 ibm-plexregular leading-10">
+            <p className="text-whitee  text-2xl smartphone:text-xl tracking-tighter mt-6 ibm-plexregular leading-10">
               {" You can call me an"}{" "}
               <span className="text-redd">{"enthusiast workaholic"}</span>
               {
