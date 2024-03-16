@@ -10,42 +10,39 @@ export function Introduction() {
         className="h-full w-screen flex justify-center bg-black"
       >
         <div className="w-1/2 smartphone:w-11/12">
-          <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 text-whitee flex items-end">
+          <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 smartphone:mt-16 text-whitee flex items-end">
             Hello There <span className="text-redd ml-4 h-full">!</span>
           </h1>
           <motion.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.8, duration: 0.3, type: "spring" }}
-            className=" mt-16 text-3xl smartphone:text-lg text-whitee ubuntu"
+            className=" mt-16 text-3xl smartphone:text-lg smartphone:text-center text-whitee ubuntu"
           >
-            Ahoy! <span className="coolfont mr-2 ml-2 text-redd">Mohd Bilal</span>, your web wizard from Lucknow, India. Currently enrolled in B.Tech .
-            <span className=" tracking-widestestcum ml-1">Crafting</span>,{" digital marvels? You bet! Join me, and"} <br /> {"let's "}
+            Ahoy! <span className="coolfont mr-2 ml-2 text-redd">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
+            <span className=" tracking-widestestcum ml-1">Crafting</span>,{" digital marvels? You bet! Join me, and"} <br className="smartphone:hidden" /> {"let's "}
             <span className=" tracking-widestestcum ml-1 ">weave wonders</span> together. Cheers!
           </motion.h2>
           <motion.div
             initial={{ y: 320 }}
             animate={{ y: 0 }}
             transition={{ delay: 1.2, duration: 0.4, type: "spring" }}
-            className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row"
+            className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center"
           >
-            <p className="text-whitee  text-2xl smartphone:text-xl tracking-tighter mt-6 ibm-plexregular leading-10">
-              {" You can call me an"}{" "}
-              <span className="text-redd">{"enthusiast workaholic"}</span>
-              {
-                ", or maybe just a web wizard in the making. With a relentless passion for coding and creating. I'm on mission to keep ethical standards in check while sprinkling a dash of creativity into every project, all about delivering results that make your jaw drop and your users say "
-              }
+            <p className="text-whitee  text-2xl smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">
+            Consider me your go-getter enthusiast
+              or your friendly neighborhood web wizard. {"I'm"} all about coding and creating with gusto, infusing every project with a splash of creativity while keeping ethics in check.<span className="tracking-wide text-redd">
+                {" My mission?"}
+              </span>  To deliver jaw-dropping results that make both you and your users say 
+              
               <span className="tracking-wide text-redd font-semibold">
-                {"'Wow'"}
+                {" 'Wow'"}
               </span>
-              {
-                ".So, if you want a web developer who's a little too excited about crafting digital magic, you've found your guy."
-              }
+              {".So, if you're after a web developer who's totally hooked on crafting digital magic, look no further—I'm your guy!"}
             </p>
-            <div>
-              {" "}
+            <div className="smartphone:mt-10 smartphone:flex justify-center">
               <img
-                className="h-3/4 translate-x-16 -translate-y-5 rounded-lg grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden"
+                className="h-3/4 translate-x-14 -translate-y-24 smartphone:translate-x-0 smartphone:translate-y-0 rounded-sm grayscale hover:grayscale-0 transition-all duration-700 overflow-hidden"
                 src={pfp}
                 alt=""
               />

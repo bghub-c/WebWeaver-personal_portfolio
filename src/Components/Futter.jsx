@@ -10,7 +10,7 @@ export function Futter(){
     }
 return(
     <div className="bg-black w-screen h-fit flex text-whitee  justify-center">
-    <section  id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white mb-4  w-8/12">
+    <section  id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white mb-4  w-8/12 smartphone:w-full">
         <div className="ml-5 p-2 mt-7 smartphone:items-center">
         <motion.h1 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.6, type:"tween"}} className="flex smartphone:flex-col smartphone:text-7xl items-end smartphone:items-center text-8xl ubuntu">Drop a hello!<HandWaving className="ml-2 smartphone:hidden" size={100} weight="duotone" /></motion.h1>
         <motion.h2 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.7, type:"tween"}} className="text-2xl smartphone:text-lg ml-8 smartphone:ml-0 py-3 ibm-plex">Lets create dope stuff together!</motion.h2>

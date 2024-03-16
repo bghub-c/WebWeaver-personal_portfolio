@@ -52,10 +52,8 @@ export function Home() {
           }}
           className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
         >
-          <p className="pl drop-shadow-xl text-5xl tracking-wide laptop:text-3xl text-whitee font-semibold ibm-plexregular ">
-            👋 Hi! My name is Mohd Bilal <br /> and I&#x27;m a Frontend web
-            developer
-          </p>
+          <p className="pl text-3xl tracking-wide laptop:text-2xl text-whitee font-semibold ibm-plexregular ">
+          👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </motion.span>
         <span className="grid place-content-center">
           <motion.svg

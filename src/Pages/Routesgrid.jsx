@@ -26,7 +26,7 @@ export function Routesgrid() {
           className=" smartphone:h-1/4 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
         >
           <motion.section
-          variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.4, type:"tween"}}
+          variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.5, type:"tween", duration:0.35}}
             id="abt"
             onMouseOver={() => {
               change(true);
@@ -49,7 +49,7 @@ export function Routesgrid() {
                   initiall ? "translate-x-5" : ""
                 } transition-all duration-700 ease-in-out`}
               >
-                Lets get personal!!
+                Lets get personal!
                 <ArrowCircleRight
                   size={32}
                   className={`text-red-600 transition-all ease-in-out duration-700 ${
@@ -72,7 +72,7 @@ export function Routesgrid() {
           to="/TalentArsenal"
           className="smartphone:h-1/4 row-start-2 col-start-6 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
         >
-          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.5, type:"tween"}}
+          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.5, type:"tween", duration:0.35}}
             id="skills"
             onMouseOver={() => {
               change1(true);
@@ -106,7 +106,7 @@ export function Routesgrid() {
           </motion.section>
         </Link>
         <Link className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out">
-          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.6, type:"tween"}}
+          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.6, type:"tween", duration:0.35}}
             id="projects"
             className="bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             onMouseOver={() => {
@@ -139,7 +139,7 @@ export function Routesgrid() {
             </h2>
           </motion.section>
         </Link>
-        <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.7, type:"tween"}}
+        <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.7, type:"tween", duration:0.35}}
           id="Work"
           className="bg-red-600 smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           onMouseOver={() => {
