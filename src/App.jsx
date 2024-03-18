@@ -17,10 +17,7 @@ function App() {
   return (
     <>
       <Navbar loc={location.pathname != "/"}/>
-      <motion.div
-        style={{ scale }}
-        className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}
-      >
+      <motion.div style={{ scale }} className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
         <Home />
       </motion.div>
       <div className={`h-screen ${divdisplay}`}></div>
@@ -29,7 +26,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.25 }}
         id="mainwrapper"
-        className="w-screen h-full relative text-white bg-black flex flex-col scroll-smooth"
+        className="transform-gpu  w-screen h-full relative text-white bg-black flex flex-col scroll-smooth"
       >
         <AnimatePresence>
           <Routes location={location} key={location.key}>
