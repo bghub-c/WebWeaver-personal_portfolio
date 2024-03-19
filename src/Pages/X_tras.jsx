@@ -5,9 +5,7 @@ export function X_tras() {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  
-
-  const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-85%"]);
   const cards = [
     {
       url: "src/Pages/assets/pic1.jpeg",
@@ -124,7 +122,9 @@ export function X_tras() {
     },
   ];
   return (
-    <section
+    <motion.section
+    initial={{opacity:0.5}}   animate={{opacity:1 }}  exit={{ opacity: 0.5 }}
+    transition={{ duration: 0.75, ease: "easeInOut" }}
       id="xtramain"
       className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
     >
@@ -138,7 +138,7 @@ export function X_tras() {
           <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16  ubuntu">:) Some clicks that {"I'm"} proud of</h2>
         </div>
           <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-            <motion.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-1000">
+            <motion.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-1000 transform-gpu">
               {cards.map((card) => {
                 return (
                   <div
@@ -163,6 +163,6 @@ export function X_tras() {
         </section>
         <section className="w-11/12 h-screen bg-blue-400">kuch aur</section>
       </section>
-    </section>
+    </motion.section>
   );
 }

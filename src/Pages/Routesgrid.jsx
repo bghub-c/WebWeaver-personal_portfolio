@@ -17,7 +17,7 @@ export function Routesgrid() {
       id="Maingrid"
         initial={{ opacity: 0.85 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        exit={{ opacity: 0,x:-100 }}
         transition={{ duration: 0.20, ease: "easeInOut" }}
         className="app2  h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
       >
