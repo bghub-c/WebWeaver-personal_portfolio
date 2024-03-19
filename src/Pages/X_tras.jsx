@@ -75,7 +75,7 @@ export function X_tras() {
         <section ref={targetRef} className="relative h-[300vh] smartphone:h-[500vh]">
         <div id="text">
           <h1 className="text-8xl smartphone:text-4xl m-16 smartphone:m-10  mt-32 smartphone:mt-10  coolfont">Photography</h1>
-          <h2 className="text-3xl smartphone:text-lg ml-24 smartphone:ml-16  ubuntu">:) Some clicks that Im proud of</h2>
+          <h2 className="text-3xl smartphone:text-lg ml-24 smartphone:ml-16  ubuntu">:) Some clicks that {"I'm"} proud of</h2>
         </div>
           <div className="sticky top-0 flex h-1/5 items-center overflow-hidden">
             <motion.div style={{ x }} className="flex gap-4">
@@ -104,7 +104,7 @@ export function X_tras() {
             </motion.div>
           </div>
         </section>
-        <section className="w-11/12 h-screen bg-blue-400">Bodybuilding</section>
+        <section className="w-11/12 h-screen bg-blue-400">kuch aur</section>
       </section>
     </section>
   );
