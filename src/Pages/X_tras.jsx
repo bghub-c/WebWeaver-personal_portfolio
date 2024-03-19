@@ -1,98 +1,111 @@
-export function X_tras(){
-    const cards = [
-        {
-          url: 'src/Pages/assets/IMG_20210105_092430 (1).jpg',
-          title: "Title 1",
-          subtitle: "kuch bhi",
-          css: "w-96 p-4",
-          divcss:"w-1/2",
-          id: 1,
-        },
-        {
-            url: 'src/Pages/assets/IMG_2386.jpg',
-            title: "Title 2",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 2,
-          },
-          {
-            url: 'src/Pages/assets/IMG_20210314_182747 (5).jpg',
-            title: "Title 13",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 3,
-          },
-          {
-            url: 'src/Pages/assets/IMG_20221104_181302_078.jpg',
-            title: "Title 14",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 4,
-          },
-          {
-            url: 'src/Pages/assets/IMG_20240313_031952_169.jpg',
-            title: "Title 15",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 5,
-          },
-          {
-            url: 'src/Pages/assets/PXL_20220119_042449211.jpg',
-            title: "Title 16",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 6,
-          },
-          {
-            url: 'src/Pages/assets/PXL_20230625_173016981~2.jpg',
-            title: "Title 17",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 7,
-          },
-          {
-            url: 'src/Pages/assets/PXL_20220715_090429594~2.jpg',
-            title: "Title 18",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 8,
-          },
-          {
-            url: 'src/Pages/assets/Remini20211224162741784.jpg',
-            title: "Title 19",
-            subtitle: "kuch bhi",
-            css: "w-96 overflow-hidden p-4",
-            divcss:"w-1/2",
-            id: 9,
-          },
-      ];
-    return(<section id="xtramain" className="flex flex-col items-center bg-whitee text-black w-screen h-full">
-        <section id="photography" className="w-11/12 bg-red-600  items-center justify-center">
-        <div id="text">
-            <h1>Photography</h1>
-            <h2>Scroll Down to see the work</h2>
-        </div>
-        <div id="pics" className="flex flex-wrap gap-5 justify-center items-center">
-           {cards.map((card)=>{
-                return(
-                    <div key={card.id} className="flex w-fit h-96 flex-col bg-white">
-                            <div style={{backgroundImage:`url(${card.url})`}} className="w-96 h-96 m-4 mb-10 bg-cover bg-no-repeat"></div>
-                            <h1 className="">{card.title}</h1>
-                    </div>
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+export function X_tras() {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+  const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-95%"]);
+  const cards = [
+    {
+      url: "src/Pages/assets/pic1.jpg",
+      title: "Title 1",
+      subtitle: "kuch bhi",
+      id: 1,
+    },
+    {
+      url: "src/Pages/assets/pic2.jpg",
+      title: "Title 12",
+      subtitle: "kuch bhi",
+      id: 2,
+    },
+    {
+      url: "src/Pages/assets/pic3.jpg",
+      title: "Title 13",
+      subtitle: "kuch bhi",
+      id: 3,
+    },
 
-                )
-           })}
+    {
+      url: "src/Pages/assets/pic4.jpg",
+      title: "Title 14",
+      subtitle: "kuch bhi",
+      id: 4,
+    },
+    {
+      url: "src/Pages/assets/pic5.jpg",
+      title: "Title 15",
+      subtitle: "kuch bhi",
+      id: 5,
+    },
+    {
+      url: "src/Pages/assets/pic6.jpg",
+      title: "Title 16",
+      subtitle: "kuch bhi",
+      id: 6,
+    },
+    {
+      url: "src/Pages/assets/pic7.jpg",
+      title: "Title 17",
+      subtitle: "kuch bhi",
+      id: 7,
+    },
+    {
+      url: "src/Pages/assets/pic8.jpg",
+      title: "Title 18",
+      subtitle: "kuch bhi",
+      id: 8,
+    },
+    {
+      url: "src/Pages/assets/pic9.jpg",
+      title: "Title 19",
+      subtitle: "kuch bhi",
+      id: 9,
+    },
+  ];
+  return (
+    <section
+      id="xtramain"
+      className="flex flex-col items-center bg-black text-whitee w-screen h-full"
+    >
+      <section
+        id="photography"
+        className="w-11/12  items-center justify-center"
+      >
+        <section ref={targetRef} className="relative h-[300vh]">
+        <div id="text">
+          <h1 className="text-8xl m-16 mt-32  coolfont">Photography</h1>
+          <h2 className="text-3xl ml-24 ubuntu">:) Some clicks that Im proud of</h2>
         </div>
+          <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+            <motion.div style={{ x }} className="flex gap-4 transition-transform duration-700 ease-in-out">
+              {cards.map((card) => {
+                return (
+                  <div
+                    key={card.id}
+                    className="group rounded-sm relative h-[500px] w-[500px] smartphone:h-[500px] smartphone:w-[350px] overflow-hidden bg-neutral-200"
+                  >
+                    <div
+                      style={{
+                        backgroundImage: `url(${card.url})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                      className="absolute inset-0 z-0 transition-transform duration-100 ease-in-out group-hover:scale-110"
+                    ></div>
+                    <div className={` absolute bottom-2 left-2 z-10 place-content-center translate-y-24 group-hover:-translate-y-2 grid transition-transform duration-300 ease-in-out`}>
+                      <p className="bg-gradient-to-bl from-black/20 to-white/0 p-4 text-2xl font-black uppercase text-white backdrop-blur-xl">
+                        {card.title}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </motion.div>
+          </div>
         </section>
-        <section className="w-11/12 bg-blue-400">
-        Bodybuilding
-        </section>
-    </section>)
+        <section className="w-11/12 h-screen bg-blue-400">Bodybuilding</section>
+      </section>
+    </section>
+  );
 }
