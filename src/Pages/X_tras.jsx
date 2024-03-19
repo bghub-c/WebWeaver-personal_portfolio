@@ -5,7 +5,7 @@ export function X_tras() {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
   const cards = [
     {
       url: "src/Pages/assets/pic1.jpg",
@@ -66,19 +66,19 @@ export function X_tras() {
   return (
     <section
       id="xtramain"
-      className="flex flex-col items-center bg-black text-whitee w-screen h-full"
+      className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
     >
       <section
         id="photography"
         className="w-11/12  items-center justify-center"
       >
-        <section ref={targetRef} className="relative h-[300vh]">
+        <section ref={targetRef} className="relative h-[300vh] smartphone:h-[500vh]">
         <div id="text">
-          <h1 className="text-8xl m-16 mt-32  coolfont">Photography</h1>
-          <h2 className="text-3xl ml-24 ubuntu">:) Some clicks that Im proud of</h2>
+          <h1 className="text-8xl smartphone:text-4xl m-16 smartphone:m-10  mt-32 smartphone:mt-10  coolfont">Photography</h1>
+          <h2 className="text-3xl smartphone:text-lg ml-24 smartphone:ml-16  ubuntu">:) Some clicks that Im proud of</h2>
         </div>
-          <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-            <motion.div style={{ x }} className="flex gap-4 transition-transform duration-700 ease-in-out">
+          <div className="sticky top-0 flex h-1/5 items-center overflow-hidden">
+            <motion.div style={{ x }} className="flex gap-4">
               {cards.map((card) => {
                 return (
                   <div
