@@ -8,6 +8,7 @@ import { Skills } from "./Pages/Skills";
 import { X_tras } from "./Pages/X_tras";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { m, AnimatePresence, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
+import { Work } from "./Pages/Work";
 function App() {
   const { scrollY } = useScroll();
   const scalee=useTransform(scrollY, [0, 1080], [1, 1.02]); 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/Introduction" element={<Introduction />}></Route>
             <Route path="/TalentArsenal" element={<Skills />}></Route>
             <Route path="/Extras" element={<X_tras />}></Route>
+            <Route path="/Work" element={<Work />}></Route>
           </Routes>
         </AnimatePresence>
       </m.div>

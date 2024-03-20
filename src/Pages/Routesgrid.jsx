@@ -118,6 +118,10 @@ export function Routesgrid() {
               </h2>
             </m.section>
           </Link>
+          <Link
+            to="/Work"
+            className="smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+          >
           <m.section
             initial="initial"
             whileInView={hasAnimated ? "":"Inview"}
@@ -125,7 +129,7 @@ export function Routesgrid() {
             onAnimationComplete={() => setHasAnimated(false)}
             transition={{ delay: 2, type: "spring", duration: 0.75 }}
             id="Work"
-            className="group bg-red-600 smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+            className="group bg-red-600 smartphone:h-1/4 flex flex-col h-full rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >
             <h1
               className={` my-1 text-white text-7xl smartphone:text-5xl  laptop:mt-auto smartphone:mx-5  mx-14 group-hover:translate-x-2 transition-all duration-300 ease-in-out`}
@@ -142,7 +146,7 @@ export function Routesgrid() {
                 weight="duotone"
               />
             </h2>
-          </m.section>
+          </m.section> </Link>
         </m.div>
       </LazyMotion>
     </>
