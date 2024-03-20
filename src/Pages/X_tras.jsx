@@ -120,7 +120,7 @@ export function X_tras() {
   return (
     <LazyMotion features={domAnimation}>
     <m.section
-    initial={{opacity:0}}   animate={{opacity:1 }}  exit={{ opacity: 0 }}
+    initial={{opacity:0}}   whileInView={{opacity:1 }}  exit={{ opacity: 0 }}
     transition={{ duration: 0.75, ease: "easeInOut" }}
       id="xtramain"
       className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
