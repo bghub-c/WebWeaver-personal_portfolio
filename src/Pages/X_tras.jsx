@@ -8,11 +8,7 @@ export function X_tras() {
   const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-85%"]);
   const cards = [
     {
-<<<<<<< HEAD
       url: "/picc1.jpeg",
-=======
-      url: "../src/Pages/assets/pic1.jpeg",
->>>>>>> 73bb045fb38ef01bdcb0241f1dc5113000e580e7
       title: "Title 1",
       subtitle: "kuch bhi",
       id: 1,
