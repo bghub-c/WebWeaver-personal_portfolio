@@ -11,7 +11,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, useScroll, useTransform } from "framer-motion";
 function App() {
   const { scrollY } = useScroll();
-  const scalee=useTransform(scrollY, [0, 1080], [1, 1.5]); 
+  const scalee=useTransform(scrollY, [0, 1080], [1, 1.10]); 
   const location = useLocation();
   const scale = location.pathname == "/" ? scalee : 0; 
   const divdisplay = location.pathname == "/" ? "view" : "hidden";

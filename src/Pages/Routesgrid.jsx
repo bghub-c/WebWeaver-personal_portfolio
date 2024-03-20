@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { ArrowCircleRight } from "@phosphor-icons/react";
-import { motion } from "framer-motion";
+import { m,LazyMotion, domAnimation } from "framer-motion";
 
 export function Routesgrid() {
   const animation={
@@ -9,20 +9,21 @@ export function Routesgrid() {
     Inview:{ y:0} }
   return (
     <>
-      <motion.div
+    <LazyMotion features={domAnimation} >
+      <m.div
       id="Maingrid"
         initial={{ opacity: 0.85 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0,x:-100 }}
-        transition={{ duration: 0.20, ease: "easeInOut" }}
+        exit={{ opacity: 0}}
+        transition={{ duration: 0.50, ease: "easeInOut" }}
         className="app2  h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
       >
         <Link
           to="/Introduction"
           className="smartphone:h-1/4 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
         >
-          <motion.section
-          variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.5, type:"spring", duration:0.35}}
+          <m.section
+          variants={animation} initial="initiall" whileInView="Inview" transition={{delay:1, type:"spring", duration:0.2}}
             id="abt"
             
             className="bg-white group h-full text-slate-950 flex justify-between items-center  rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
@@ -52,13 +53,13 @@ export function Routesgrid() {
               group-hover:scale-105`}
               alt="hh"
             />
-          </motion.section>
+          </m.section>
         </Link>
         <Link
           to="/TalentArsenal"
           className="smartphone:h-1/4 row-start-2 col-start-6 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
         >
-          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.6, type:"spring", duration:0.35}}
+          <m.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:1.2, type:"spring", duration:0.2}}
             id="skills"
             className="group bg-zinc-900 h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >
@@ -79,10 +80,10 @@ export function Routesgrid() {
                 weight="duotone"
               />
             </h2>
-          </motion.section>
+          </m.section>
         </Link>
         <Link to="/Extras" className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out">
-          <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.7, type:"spring", duration:0.35}}
+          <m.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:1.4, type:"spring", duration:0.2}}
             id="projects"
             className="group bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >
@@ -101,9 +102,9 @@ export function Routesgrid() {
                 weight="duotone"
               />
             </h2>
-          </motion.section>
+          </m.section>
         </Link>
-        <motion.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:0.8, type:"spring", duration:0.35}}
+        <m.section variants={animation} initial="initiall" whileInView="Inview" transition={{delay:1.6, type:"spring", duration:0.2}}
           id="Work"
           className="group bg-red-600 smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           
@@ -123,8 +124,8 @@ export function Routesgrid() {
               weight="duotone"
             />
           </h2>
-        </motion.section>
-      </motion.div>
+        </m.section>
+      </m.div></LazyMotion>
     </>
   );
 }

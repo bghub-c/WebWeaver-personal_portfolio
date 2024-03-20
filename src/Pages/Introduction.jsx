@@ -7,6 +7,7 @@ export function Introduction() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        transition={{ delay: 0.75, duration: 0.75, type: "spring" }}
         className="h-full w-screen flex justify-center bg-black"
       >
         <div className="w-1/2 smartphone:w-11/12">
@@ -16,7 +17,7 @@ export function Introduction() {
           <motion.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1, duration: 0.5, type: "spring" }}
+            transition={{ delay: 2.25, duration: 0.5, type: "spring" }}
             className=" mt-16 text-3xl smartphone:text-lg smartphone:text-center text-whitee ubuntu"
           >
             Ahoy! <span className="coolfont mr-2 ml-2 text-redd">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
@@ -26,7 +27,7 @@ export function Introduction() {
           <motion.div
             initial={{ y: 320 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.3, duration: 0.5, type: "spring" }}
+            transition={{ delay: 2.75, duration: 0.5, type: "spring" }}
             className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center"
           >
             <p className="text-whitee  text-2xl smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">

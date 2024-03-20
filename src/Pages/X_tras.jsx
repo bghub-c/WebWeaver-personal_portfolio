@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { m, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
 import { useRef } from "react";
 export function X_tras() {
   const targetRef = useRef(null);
@@ -117,8 +117,9 @@ export function X_tras() {
     },
   ];
   return (
-    <motion.section
-    initial={{opacity:0.5}}   animate={{opacity:1 }}  exit={{ opacity: 0.5 }}
+    <LazyMotion features={domAnimation}>
+    <m.section
+    initial={{opacity:0}}   animate={{opacity:1 }}  exit={{ opacity: 0 }}
     transition={{ duration: 0.75, ease: "easeInOut" }}
       id="xtramain"
       className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
@@ -133,7 +134,7 @@ export function X_tras() {
           <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16  ubuntu">:) Some clicks that {"I'm"} proud of</h2>
         </div>
           <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-            <motion.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-300 transform-gpu">
+            <m.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-100 transform-gpu">
               {cards.map((card) => {
                 return (
                   <div
@@ -153,11 +154,11 @@ export function X_tras() {
                   </div>
                 );
               })}
-            </motion.div>
+            </m.div>
           </div>
         </section>
         <section className="w-11/12 h-screen bg-blue-400">kuch aur</section>
       </section>
-    </motion.section>
+    </m.section></LazyMotion>
   );
 }
