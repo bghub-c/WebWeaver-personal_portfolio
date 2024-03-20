@@ -5,7 +5,8 @@ export function X_tras() {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x =useTransform(scrollYProgress, [0.20, 1], ["1%", "-85%"]);
+  const sc=window.innerWidth<720?0:0.02;
+  const x =useTransform(scrollYProgress, [sc, 1], ["1%", "-85%"]);
 
   const cards = useMemo(() => [
     {
