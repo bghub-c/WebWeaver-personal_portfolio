@@ -8,7 +8,7 @@ export function X_tras() {
   const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-85%"]);
   const cards = [
     {
-      url: "src/Pages/assets/pic1.jpeg",
+      url: "../src/Pages/assets/pic1.jpeg",
       title: "Title 1",
       subtitle: "kuch bhi",
       id: 1,
