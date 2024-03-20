@@ -5,7 +5,7 @@ import { m,LazyMotion, domAnimation } from "framer-motion";
 
 export function Routesgrid() {
   const animation={
-    initiall:{y:50},
+    initiall:{y:10},
     Inview:{ y:0} }
   return (
     <>

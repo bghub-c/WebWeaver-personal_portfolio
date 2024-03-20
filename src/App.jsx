@@ -1,5 +1,4 @@
 import "./App.css";
-import { motion } from "framer-motion";
 import { Navbar } from "./Components/Navbar";
 import { Futter } from "./Components/Futter";
 import { Introduction } from "./Pages/Introduction";
@@ -8,21 +7,22 @@ import { Home } from "./Components/Home";
 import { Skills } from "./Pages/Skills";
 import { X_tras } from "./Pages/X_tras";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { m, AnimatePresence, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
 function App() {
   const { scrollY } = useScroll();
-  const scalee=useTransform(scrollY, [0, 1080], [1, 1.05]); 
+  const scalee=useTransform(scrollY, [0, 1080], [1, 1.02]); 
   const location = useLocation();
   const scale = location.pathname == "/" ? scalee : 0; 
   const divdisplay = location.pathname == "/" ? "view" : "hidden";
   return (
     <>
+    <LazyMotion features={domAnimation}>
       <Navbar loc={location.pathname != "/"}/>
-      <motion.div style={{  scale }} className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
+      <m.div style={{  scale }} className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
         <Home />
-      </motion.div>
+      </m.div>
       <div className={`h-screen ${divdisplay}`}></div>
-      <motion.div
+      <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.25 }}
@@ -37,8 +37,8 @@ function App() {
             <Route path="/Extras" element={<X_tras />}></Route>
           </Routes>
         </AnimatePresence>
-      </motion.div>
-      <Futter></Futter>
+      </m.div>
+      <Futter></Futter></LazyMotion>
     </>
   );
 }
