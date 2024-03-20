@@ -1,5 +1,5 @@
 //assests import
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 export function Home() {
   
   const icon = {
@@ -15,7 +15,7 @@ export function Home() {
   return (
     <>
       <section className="w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
-        <motion.span
+        <m.span
           layout
           initial={{
             y: -500,
@@ -35,8 +35,8 @@ export function Home() {
           <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-whitee ubuntu">
             {"Nice To See You!"}
           </p>
-        </motion.span>
-        <motion.span
+        </m.span>
+        <m.span
           initial={{
             y: 500,
             opacity: 0,
@@ -54,15 +54,15 @@ export function Home() {
         >
           <p className="pl text-3xl tracking-wide laptop:text-2xl text-whitee font-semibold ibm-plexregular ">
           👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
-        </motion.span>
+        </m.span>
         <span className="grid place-content-center">
-          <motion.svg
+          <m.svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
             viewBox="0 0 300 300"
             className="item "
           >
-            <motion.path
+            <m.path
               d="m 170 20 v 150 l 30 -10 l -30 50 l -30 -50 l 30 10 v -150 h 0 "
               variants={icon}
               initial="hidden"
@@ -73,7 +73,7 @@ export function Home() {
                 fill: { delay: 2, duration: 3 , ease: [1, 0, 0.8, 1] },
               }}
             />
-          </motion.svg>
+          </m.svg>
         </span>
       </section>
     </>

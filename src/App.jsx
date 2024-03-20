@@ -25,7 +25,7 @@ function App() {
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.25 }}
+        transition={{ duration: 1.25, ease: "easeInOut" }}
         id="mainwrapper"
         className="transform-gpu  w-screen h-full relative text-white bg-black flex flex-col scroll-smooth"
       >

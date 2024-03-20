@@ -1,9 +1,9 @@
-import { motion } from "framer-motion"; import { Link } from "react-router-dom"; import PropTypes from 'prop-types'; import { InstagramLogo, Download,TwitterLogo,GithubLogo,LinkedinLogo,ArrowCircleLeft  } from "@phosphor-icons/react";
+import { m } from "framer-motion"; import { Link } from "react-router-dom"; import PropTypes from 'prop-types'; import { InstagramLogo, Download,TwitterLogo,GithubLogo,LinkedinLogo,ArrowCircleLeft  } from "@phosphor-icons/react";
 export function Navbar({loc}){
     return(
         <div className="flex ">
         <Link to="/" className={`${loc?"view":"hidden"} text-white hover:text-green-500 flex justify-center items-center`} ><ArrowCircleLeft size={32} weight="duotone" /></Link>
-        <motion.nav 
+        <m.nav 
         initial={{
             y:-200
         }}
@@ -12,7 +12,8 @@ export function Navbar({loc}){
         }}
         transition={{
             duration:0.5,
-            delay:0.5,
+            type:"spring",
+            delay:0.75,
             ease:"easeInOut"
         }}
         className="w-screen h-nav backdrop-blur-xl pb-1 text-white flex tablet:flex-col justify-between items-center sticky top-0">
@@ -24,7 +25,7 @@ export function Navbar({loc}){
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200 text-white transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-blue-500  p-3/4"><TwitterLogo size={32} weight="duotone" /></li>
                 <li className="h-full my-3 backdrop-brightness-200 text-black ubuntu transition-all ease-in-out duration-700 hover:text-black hover:bg-watspp w-full bg-whitee rounded-full overflow-hidden"><a href="/Mohd Bilal.pdf" download className="flex gap-1  items-center text-md smartphone:pr-2 pl-2">Download resume<Download className="bg-watspp p-1 smartphone:hidden" size={32} weight="duotone" /></a></li>
             </ul>
-        </motion.nav>
+        </m.nav>
         </div>
     )
 }
