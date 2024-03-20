@@ -8,117 +8,112 @@ export function X_tras() {
   const x = useTransform(scrollYProgress, [0.20, 1], ["1%", "-85%"]);
   const cards = [
     {
-      url: "src/Pages/assets/pic1.jpeg",
+      url: "/picc1.jpeg",
       title: "Title 1",
       subtitle: "kuch bhi",
       id: 1,
     },
     {
-      url: "src/Pages/assets/pic21.jpg",
+      url: "/picc2.jpg",
       title: "Title 12",
       subtitle: "kuch bhi",
       id: 2,
     },
     {
-      url: "src/Pages/assets/picc4.jpg",
+      url: "/picc4.jpg",
       title: "Title 13",
       subtitle: "kuch bhi",
       id: 3,
     },
 
     {
-      url: "src/Pages/assets/picc5.jpg",
+      url: "/picc5.jpg",
       title: "Title 14",
       subtitle: "kuch bhi",
       id: 4,
     },
     {
-      url: "src/Pages/assets/picc6.jpg",
+      url: "/picc6.jpg",
       title: "Title 15",
       subtitle: "kuch bhi",
       id: 5,
     },
     {
-      url: "src/Pages/assets/picc7.jpg",
+      url: "/picc7.jpg",
       title: "Title 16",
       subtitle: "kuch bhi",
       id: 6,
     },
     {
-      url: "src/Pages/assets/picc8.jpg",
+      url: "/picc8.jpg",
       title: "Title 17",
       subtitle: "kuch bhi",
       id: 7,
     },
     {
-      url: "src/Pages/assets/picc9.jpg",
+      url: "/picc9.jpg",
       title: "Title 18",
       subtitle: "kuch bhi",
       id: 8,
     },
     {
-      url: "src/Pages/assets/picc10.jpg",
+      url: "/picc10.jpg",
       title: "Title 19",
       subtitle: "kuch bhi",
       id: 9,
     },
     {
-      url: "src/Pages/assets/pic11.jpg",
+      url: "/picc11.jpg",
       title: "Title 20",
       subtitle: "kuch bhi",
       id: 10,
     },
     {
-      url: "src/Pages/assets/pic12.jpg",
+      url: "/picc12.jpg",
       title: "Title 21",
       subtitle: "kuch bhi",
       id: 11,
     },
     {
-      url: "src/Pages/assets/pic13.jpg",
+      url: "/picc13.jpg",
       title: "Title 22",
       subtitle: "kuch bhi",
       id: 12,
     },{
-      url: "src/Pages/assets/pic14.jpg",
+      url: "/picc3.jpg",
       title: "Title 23",
       subtitle: "kuch bhi",
       id: 13,
     },{
-      url: "src/Pages/assets/pic15.jpg",
+      url: "/picc15.jpg",
       title: "Title 24",
       subtitle: "kuch bhi",
       id: 14,
     },{
-      url: "src/Pages/assets/pic16.jpg",
+      url: "/picc16.jpg",
       title: "Title 25",
       subtitle: "kuch bhi",
       id: 15,
     },{
-      url: "src/Pages/assets/pic21.jpg",
+      url: "/picc17.jpg",
       title: "Title 26",
       subtitle: "kuch bhi",
       id: 16,
     },{
-      url: "src/Pages/assets/pic18.jpg",
+      url: "/picc18.jpg",
       title: "Title 27",
       subtitle: "kuch bhi",
       id: 17,
     },{
-      url: "src/Pages/assets/pic20.jpg",
+      url: "/picc19.jpg",
       title: "Title 28",
       subtitle: "kuch bhi",
       id: 18,
     },{
-      url: "src/Pages/assets/pic23.jpg",
+      url: "/picc20.jpg",
       title: "Title 29",
       subtitle: "kuch bhi",
       id: 19,
-    },{
-      url: "src/Pages/assets/pic24.jpg",
-      title: "Title 30",
-      subtitle: "kuch bhi",
-      id: 20,
     },
   ];
   return (
@@ -138,7 +133,7 @@ export function X_tras() {
           <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16  ubuntu">:) Some clicks that {"I'm"} proud of</h2>
         </div>
           <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-            <motion.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-1000 transform-gpu">
+            <motion.div style={{ x }} className="flex  gap-4  transition-transform ease-in-out duration-300 transform-gpu">
               {cards.map((card) => {
                 return (
                   <div
