@@ -22,7 +22,8 @@ return(
             <li className="h-full w-1/5 mr-3 backdrop-brightness-200 text-white transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-insta p-3/4"><InstagramLogo size={32} weight="duotone" /></li>
             <li className="h-full w-1/5 mx-3 backdrop-brightness-200 text-white transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-lnkin  p-3/4"><LinkedinLogo size={32} weight="duotone" /></li> 
         </ul>
-        <a href="mailto:mohammadbilal.mail@gmail.com" onMouseEnter={() => {
+        <a href="mailto:mohammadbilal.mail@gmail.com?subject=Job%20Offer%20-%20[%20Edit%20according%20to%20your%20needs%20]%20"
+ onMouseEnter={() => {
               changestate(true);
             }} onMouseLeave={() => {
                 changestate(false);
