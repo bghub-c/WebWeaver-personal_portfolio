@@ -27,7 +27,7 @@ export function Routesgrid() {
             <m.section variants={animation}
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
-              transition={{ delay: 0.4, type: "spring", duration: 0.75 }}
+              transition={{ delay: 0.4, type: "spring", duration: 0.5 }}
               id="abt"
               className="bg-white group h-full text-slate-950 flex justify-between items-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -66,7 +66,7 @@ export function Routesgrid() {
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               variants={animation}
-              transition={{ delay: 1, type: "spring", duration: 0.75 }}
+              transition={{ delay: 1, type: "spring", duration: 0.5 }}
               id="skills"
               className="group bg-zinc-900 h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -97,7 +97,7 @@ export function Routesgrid() {
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               variants={animation}
-              transition={{ delay: 1.5, type: "spring", duration: 0.75 }}
+              transition={{ delay: 1.5, type: "spring", duration: 0.5 }}
               id="projects"
               className="group bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -127,7 +127,7 @@ export function Routesgrid() {
             whileInView={hasAnimated ? "":"Inview"}
             variants={animation}
             onAnimationComplete={() => setHasAnimated(false)}
-            transition={{ delay: 2, type: "spring", duration: 0.75 }}
+            transition={{ delay: 2, type: "spring", duration: 0.5 }}
             id="Work"
             className="group bg-red-600 flex flex-col h-full rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >

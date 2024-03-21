@@ -132,7 +132,7 @@ export function X_tras() {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         exit={{opacity: 0}}
-        transition={{duration: 0.75, ease: "easeInOut"}}
+        transition={{duration: 0.5, ease: "easeInOut"}}
         id="xtramain"
         className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
       >
@@ -146,7 +146,7 @@ export function X_tras() {
               <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of</h2>
             </div>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-              <m.div style={{x}} className="flex gap-4 transition-transform ease-in-out duration-100 transform-gpu">
+              <m.div style={{x}}  className="flex gap-4 transition-transform ease-in-out  transform-gpu">
                 {cards.map((card) => (
                   <div
                     key={card.id}
