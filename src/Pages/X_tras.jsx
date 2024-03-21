@@ -1,4 +1,5 @@
 import { m, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
+import { Barricade } from "@phosphor-icons/react";
 import { useRef, useEffect,useMemo } from "react";
 export function X_tras() {
   const targetRef = useRef(null);
@@ -167,7 +168,10 @@ export function X_tras() {
               </m.div>
             </div>
           </section>
-          <section className="w-11/12 h-screen bg-blue-400">kuch aur</section>
+          <section className="w-11/12 h-screen flex justify-center items-center text-whitee">
+        <Barricade className="mx-4 text-redd" size={100} weight="duotone" /> <br />
+        <h1 className="text-7xl  ubuntu">Coming Soon <span className="text-redd">!</span></h1>
+        </section>
         </section>
       </m.section>
     </LazyMotion>
