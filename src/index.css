@@ -14,7 +14,9 @@
 ::-webkit-scrollbar {
   width: 10px; 
 }
-
+::-webkit-scrollbar:horizontal {
+display: none;
+}
 ::-webkit-scrollbar-track {
   background: #FFFCF2; 
 }
@@ -26,7 +28,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #252422;
 }
-
+::-webkit-scrollbar-corner {
+  display: none; /* Hide the bottom scrollbar */
+}
 body {
   font-synthesis: none;
   text-rendering: optimizeLegibility;

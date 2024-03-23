@@ -71,53 +71,7 @@ export function X_tras() {
       subtitle: "kuch bhi",
       id: 10,
     },
-    {
-      url: "/picc12.jpg",
-      title: "Title 21",
-      subtitle: "kuch bhi",
-      id: 11,
-    },
-    {
-      url: "/picc13.jpg",
-      title: "Title 22",
-      subtitle: "kuch bhi",
-      id: 12,
-    },{
-      url: "/picc3.jpg",
-      title: "Title 23",
-      subtitle: "kuch bhi",
-      id: 13,
-    },{
-      url: "/picc15.jpg",
-      title: "Title 24",
-      subtitle: "kuch bhi",
-      id: 14,
-    },{
-      url: "/picc16.jpg",
-      title: "Title 25",
-      subtitle: "kuch bhi",
-      id: 15,
-    },{
-      url: "/picc17.jpg",
-      title: "Title 26",
-      subtitle: "kuch bhi",
-      id: 16,
-    },{
-      url: "/picc18.jpg",
-      title: "Title 27",
-      subtitle: "kuch bhi",
-      id: 17,
-    },{
-      url: "/picc19.jpg",
-      title: "Title 28",
-      subtitle: "kuch bhi",
-      id: 18,
-    },{
-      url: "/picc20.jpg",
-      title: "Title 29",
-      subtitle: "kuch bhi",
-      id: 19,
-    },
+    
   ], []);
   useEffect(() => {
     cards.forEach((card) => {
