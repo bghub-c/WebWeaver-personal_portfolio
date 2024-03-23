@@ -12,62 +12,62 @@ export function X_tras() {
   const cards = useMemo(() => [
     {
       url: "/picc1.jpeg",
-      title: "Title 1",
+      title: "Sunshine Bloom",
       subtitle: "kuch bhi",
       id: 1,
     },
     {
       url: "/picc2.jpg",
-      title: "Title 12",
+      title: "Puppy Joy",
       subtitle: "kuch bhi",
       id: 2,
     },
     {
       url: "/picc4.jpg",
-      title: "Title 13",
-      subtitle: "kuch bhi",
+      title: "Mahek",
+      subtitle: "",
       id: 3,
     },
 
     {
       url: "/picc5.jpg",
-      title: "Title 14",
+      title: "Golden Departure",
       subtitle: "kuch bhi",
       id: 4,
     },
     {
       url: "/picc6.jpg",
-      title: "Title 15",
+      title: "Crimson Arch",
       subtitle: "kuch bhi",
       id: 5,
     },
     {
       url: "/picc7.jpg",
-      title: "Title 16",
+      title: "Market Moments",
       subtitle: "kuch bhi",
       id: 6,
     },
     {
       url: "/picc8.jpg",
-      title: "Title 17",
+      title: "Eerie Timepiece ",
       subtitle: "kuch bhi",
       id: 7,
     },
     {
       url: "/picc9.jpg",
-      title: "Title 18",
+      title: "Pup Gathering",
       subtitle: "kuch bhi",
       id: 8,
     },
     {
       url: "/picc10.jpg",
-      title: "Title 19",
+      title: "Red beauty",
       subtitle: "kuch bhi",
       id: 9,
     },
     {
       url: "/picc11.jpg",
-      title: "Title 20",
+      title: "Sunny Bloom",
       subtitle: "kuch bhi",
       id: 10,
     },
@@ -94,17 +94,17 @@ export function X_tras() {
           id="photography"
           className="w-11/12"
         >
-          <section ref={targetRef} className="relative h-[300vh] smartphone:h-[500vh]">
-            <section id="text">
+          <section ref={targetRef} className="relative h-[450vh] smartphone:h-[500vh]">
+            <section id="text" className="">
               <h1 className="text-8xl smartphone:text-5xl m-16 smartphone:m-10 mt-32 smartphone:mt-10 coolfont">Photography</h1>
-              <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of</h2>
+              <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of <span className="hidden smartphone:flex mt-5 text-sm">(Swipe down to see them slide)</span></h2>
             </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-              <m.div style={{x}}  className="flex gap-4 transition-transform ease-in-out  transform-gpu">
+              <m.div style={{x}} transition={{type:"spring", ease:"easeInOut"}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-in-out  transform-gpu">
                 {cards.map((card) => (
                   <div
                     key={card.id}
-                    className="group rounded-sm relative h-[500px] w-[350px] smartphone:h-[500px] smartphone:w-[250px] overflow-hidden bg-neutral-200"
+                    className="group rounded-sm relative h-[600px] w-[400px] smartphone:h-[500px] smartphone:w-[250px] overflow-hidden bg-neutral-200"
                   >
                     <img
                       src={card.url}
@@ -113,7 +113,7 @@ export function X_tras() {
                       alt={card.title}
                     />
                     <div className="absolute bottom-2 left-2 z-10 place-content-center translate-y-24 group-hover:-translate-y-2 grid transition-transform duration-700 ease-in-out">
-                      <p className="bg-gradient-to-bl from-black/20 to-white/0 p-4 text-2xl font-black uppercase text-white backdrop-blur-xl">
+                      <p className="bg-gradient-to-bl from-black/20 to-white/0 p-4 text-2xl font-black text-bk backdrop-blur-sm">
                         {card.title}
                       </p>
                     </div>
