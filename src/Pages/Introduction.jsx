@@ -1,20 +1,19 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import pfp from "../assets/billu.jpg";
 export function Introduction() {
   return (
     <>
-      <motion.section
+      <m.section
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ delay: 0.75, duration: 0.75, type: "spring" }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }}
         className="h-full w-screen flex justify-center bg-bk text-whitee"
       >
         <div className="w-1/2 smartphone:w-11/12">
           <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 smartphone:mt-16  flex items-end">
             Hello There <span className="text-accent ml-4 h-full">!</span>
           </h1>
-          <motion.h2
+          <m.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
             transition={{ delay: 2.25, duration: 0.5, type: "spring" }}
@@ -23,8 +22,8 @@ export function Introduction() {
             Ahoy! <span className="coolfont mr-2 ml-2 text-accent">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
             <span className=" tracking-widestestcum ml-1">Crafting</span>,{" digital marvels? You bet! Join me, and"} <br className="smartphone:hidden" /> {"let's "}
             <span className=" tracking-widestestcum ml-1 ">weave wonders</span> together. Cheers!
-          </motion.h2>
-          <motion.div
+          </m.h2>
+          <m.div
             initial={{ y: 320 }}
             animate={{ y: 0 }}
             transition={{ delay: 2.75, duration: 0.5, type: "spring" }}
@@ -48,9 +47,9 @@ export function Introduction() {
                 alt=""
               />
             </div>
-          </motion.div>
+          </m.div>
         </div>
-      </motion.section>
+      </m.section>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { m, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
+import { m, useScroll, useTransform } from "framer-motion";
 import { InstagramLogo } from "@phosphor-icons/react";
 import { useRef, useEffect,useMemo } from "react";
 export function X_tras() {
@@ -81,12 +81,10 @@ export function X_tras() {
   }, [cards]);
 
   return (
-    <LazyMotion features={domAnimation}>
       <m.section
         initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        exit={{opacity: 0}}
-        transition={{duration: 0.5, ease: "easeInOut"}}
+        animate={{opacity: 1}}
+        transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }}
         id="xtramain"
         className="flex flex-col items-center justify-center bg-bk text-whitee w-screen h-full"
       >
@@ -100,7 +98,7 @@ export function X_tras() {
               <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of <span className="hidden smartphone:flex mt-5 text-sm">(Swipe down to see them slide)</span></h2>
             </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-              <m.div style={{x}} transition={{type:"spring", ease:"easeInOut"}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-in-out  transform-gpu">
+              <m.div style={{x}} transition={{type:"spring", ease:"easeInOut"}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-in-out duration-700 transform-gpu">
                 {cards.map((card) => (
                   <div
                     key={card.id}
@@ -127,6 +125,5 @@ export function X_tras() {
         </section>
         </section>
       </m.section>
-    </LazyMotion>
   );
 }
