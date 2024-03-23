@@ -60,7 +60,7 @@ body {
   stroke-linecap: round;
 }
 .app2{
-  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(45deg, rgb(0,4,7),rgb(0,4,7));
+  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(180deg, #403d39,rgb(0,4,7));
 }
 .ralewaydots{
   font-family: "Raleway Dots", sans-serif;

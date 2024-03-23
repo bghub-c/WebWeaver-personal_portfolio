@@ -29,14 +29,14 @@ export function Routesgrid() {
               whileInView={hasAnimated ? "":"Inview"}
               transition={{ delay: 0.4, type: "spring", duration: 0.5 }}
               id="abt"
-              className="bg-white group h-full text-slate-950 flex justify-between items-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="bg-bk group h-full text-whitee flex justify-between items-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
               <div className="flex flex-col smartphone:my-3 smartphone:items-center smartphone:justify-center">
                 <h1
                   className={` text-7xl smartphone:text-5xl drop-shadow-xl text-zinc-700 laptop:mt-auto smartphone:mx-5 mx-14
                   group-hover:translate-x-3 transition-all duration-300 ease-in-out`}
                 >
-                  About <span className="text-red-600">Me!</span>
+                  About <span className="text-accent">Me!</span>
                 </h1>
                 <h2
                   className={`text-lg laptop:text-md text-zinc-700 mb-auto smartphone:mx-5 mx-20 flex gap-1 items-center 
@@ -45,7 +45,7 @@ export function Routesgrid() {
                   Lets get personal!
                   <ArrowCircleRight
                     size={32}
-                    className={`text-red-600 transition-all ease-in-out duration-300 group-hover:translate-x-3`}
+                    className={`text-accent opacity-85 transition-all ease-in-out duration-300 group-hover:translate-x-3`}
                     weight="duotone"
                   />
                 </h2>
@@ -68,21 +68,21 @@ export function Routesgrid() {
               variants={animation}
               transition={{ delay: 1, type: "spring", duration: 0.5 }}
               id="skills"
-              className="group bg-zinc-900 h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="group bg-bkgg text-bk h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
               <h1
-                className={`my-1 text-white laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6 group-hover:translate-x-2
+                className={`my-1  laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6 group-hover:translate-x-2
                transition-all duration-300 ease-in-out`}
               >
-                Skill <span className="text-blue-500">Palette</span>
+                Skill <span className="text-whitee">Palette</span>
               </h1>
               <h2
-                className={`text-md text-white mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4
+                className={`text-md  mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4
                transition-all duration-300 ease-in-out`}
               >
                 Skills I Bring to the Table
                 <ArrowCircleRight
-                  className={`text-blue-500 transition-all ease-in-out duration-300 group-hover:translate-x-2`}
+                  className={`text-accent transition-all ease-in-out duration-300 group-hover:translate-x-2`}
                   size={32}
                   weight="duotone"
                 />
@@ -99,19 +99,19 @@ export function Routesgrid() {
               variants={animation}
               transition={{ delay: 1.5, type: "spring", duration: 0.5 }}
               id="projects"
-              className="group bg-blue-500 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="group bg-bkgg text-bk flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
               <h1
-                className={`my-1 laptop:text-5xl  smartphone:text-5xl text-white mt-auto mx-10 smartphone:mx-6  group-hover:translate-x-2 transition-all duration-300 ease-in-out`}
+                className={`my-1 laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6  group-hover:translate-x-2 transition-all duration-300 ease-in-out`}
               >
-                X-<span className="text-zinc-900">Tras</span>
+                X-<span className="text-whitee">Tras</span>
               </h1>
               <h2
-                className={`text-md text-white mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4 transition-all duration-300 ease-in-out`}
+                className={`text-md mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4 transition-all duration-300 ease-in-out`}
               >
                 Stuff that I&#x27;m into
                 <ArrowCircleRight
-                  className={`text-zinc-900 transition-all ease-in-out duration-300 group-hover:translate-x-2`}
+                  className={`text-accent opacity-85 transition-all ease-in-out duration-300 group-hover:translate-x-2`}
                   size={32}
                   weight="duotone"
                 />
@@ -129,19 +129,19 @@ export function Routesgrid() {
             onAnimationComplete={() => setHasAnimated(false)}
             transition={{ delay: 2, type: "spring", duration: 0.5 }}
             id="Work"
-            className="group bg-red-600 flex flex-col h-full rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+            className="group bg-bk text-whitee  flex flex-col h-full rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >
             <h1
-              className={` my-1 text-white text-7xl smartphone:text-5xl  laptop:mt-auto smartphone:mx-5  mx-14 group-hover:translate-x-2 transition-all duration-300 ease-in-out`}
+              className={` my-1  text-7xl smartphone:text-5xl  laptop:mt-auto smartphone:mx-5  mx-14 group-hover:translate-x-2 transition-all duration-300 ease-in-out`}
             >
-              My<span className="text-zinc-800"> Work</span>
+              My<span className="text-accent"> Work</span>
             </h1>
             <h2
-              className={`text-md  text-white  smartphone:mx-8 mx-20 mb-auto flex gap-2 items-center group-hover:translate-x-4 transition-all duration-300 ease-in-out`}
+              className={`text-md  smartphone:mx-8 mx-20 mb-auto flex gap-2 items-center group-hover:translate-x-4 transition-all duration-300 ease-in-out`}
             >
               Work that I&#x27;m into
               <ArrowCircleRight
-                className={`text-zinc-800 transition-all ease-in-out duration-700 group-hover:translate-x-2`}
+                className={`text-accent opacity-85 transition-all ease-in-out duration-700 group-hover:translate-x-2`}
                 size={32}
                 weight="duotone"
               />

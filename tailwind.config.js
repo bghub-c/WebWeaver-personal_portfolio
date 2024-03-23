@@ -28,10 +28,10 @@ export default {
         // => @media (min-width: 1280px) 
       },
       colors:{
-      bk:"#fffcf2",
+      whitee:"#252422",
       bkg : "#403d39",
       bkgg :"#ccc5b9",
-      whitee:"#252422",
+      bk:"#fffcf2",
       accent:"#eb5e28",
       insta:"#DD2A7B",
       fb:"#3B5998",
