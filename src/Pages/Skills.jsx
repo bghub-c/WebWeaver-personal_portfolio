@@ -1,11 +1,104 @@
-import { Barricade } from "@phosphor-icons/react"
-export function Skills(){
-    return(
-        <>
-        <section className="w-screen h-screen flex justify-center items-center text-whitee">
-        <Barricade className="mx-4 text-redd" size={100} weight="duotone" /> <br />
-        <h1 className="text-7xl  ubuntu">Coming Soon <span className="text-redd">!</span></h1>
+import { DownloadSimple, UploadSimple } from "@phosphor-icons/react";
+import { m, AnimatePresence } from "framer-motion";
+import React, { useState } from "react";
+export function Skills() {
+  const [skills, setSkills] = useState([]);
+  const [pushes, setpushes] = useState(0);
+  const skillval = [
+    {
+      title: "HTML",
+      id: 1,
+    },
+    {
+      title: "CSS",
+      id: 2,
+    },
+    {
+      title: "JS",
+      id: 3,
+    },
+    {
+      title: "TailwindCSS",
+      id: 4,
+    },
+    {
+      title: "React.js",
+      id: 5,
+    },
+    {
+        title: "Git/Github",
+        id: 6,
+      },
+  ];
+
+  const pushSkill = () => {
+    setpushes(pushes + 1);
+    setSkills([
+      ...skills,
+      { id: skillval[pushes].id, title: skillval[pushes].title },
+    ]);
+  };
+
+  const popSkill = () => {
+    setpushes(pushes - 1);
+    setSkills(skills.slice(0, -1));
+  };
+
+  return (
+    <>
+      <m.section initial={{opacity:0}} animate={{opacity:1}} className="w-11/12 h-screen mx-auto flex flex-col justify-start ite text-whitee">
+        <div id="heading" className="text-7xl smartphone:text-6xl mt-5 ubuntu">
+          <h1>
+            My Skills {'"Stack"'} 
+          </h1>
+          <h2 className="text-2xl mt-4 ml-8 smartphone:ml-4">Try pushing skills to the stack</h2>
+        </div>
+        <div
+          id="buttons"
+          className="flex justify-center  text-4xl smartphone:text-xl  mt-9 "
+        >
+          <button
+            onClick={pushSkill}
+            className="flex justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk  font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
+          >
+            Push(skill) <DownloadSimple size={"10%"} className="mx-5 smartphone:mx-1" />
+          </button>
+          <button
+            onClick={popSkill}
+            className="flex justify-center items-center h-fit mx-auto py-2 rounded-2xl border-2 border-dashed border-black bg-bk font-semibold uppercase text-black transition-all duration-500 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
+          >
+            Pop(skill) <UploadSimple size={"10%"} className="mx-5 smartphone:mx-1" />
+          </button>
+        </div>
+        <section
+          id="stack"
+          className="mx-auto mt-[100px]"
+        >
+            
+          <div className="relative w-72 h-72">
+            <div className=" inset-0  flex flex-col-reverse items-center justify-end">
+            <AnimatePresence>
+              {skills.map((skill) => (
+                <React.Fragment key={skill.id}>
+                    
+                    <m.span initial={{opacity:0,y:-200}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-200}} className=" flex flex-col-reverse ">
+                  <div className="w-56 h-6 rad border-2 -translate-y-2 -mb-10 border-whitee"></div>
+                  <div className="w-56  bg-bk z-10 translate-y-1 border-x-2 border-whitee flex justify-center items-end">
+                    <h1 className="ibm-plexmid text-3xl mt-4 mb-2">
+                      {skill.title}
+                    </h1>
+                  </div>
+                  <div
+                    className={`w-56 h-6 rad ${
+                      skill.id === pushes ? "border-4 bg-whitee" : "border-b-4"
+                    } border-whitee z-20 translate-y-4`}
+                  ></div></m.span>
+                </React.Fragment>
+              ))}</AnimatePresence>
+            </div>
+          </div>
         </section>
-        </>
-    )
+      </m.section>
+    </>
+  );
 }

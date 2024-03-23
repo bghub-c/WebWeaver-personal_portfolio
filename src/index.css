@@ -12,7 +12,19 @@
   padding-right: 09%;
 }
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFCF2; 
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc5b9; 
+  border-radius: 15px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252422;
 }
 
 body {
@@ -25,17 +37,6 @@ body {
 .coolfont {
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
-  font-style: normal;
-}
-
-.vt323h {
-  font-family: "VT323", monospace;
-  font-weight: 10;
-  font-style: normal;
-}
-.vt323 {
-  font-family: "VT323", monospace;
-  font-weight: 1000;
   font-style: normal;
 }
 .h-nav{
@@ -60,7 +61,7 @@ body {
   stroke-linecap: round;
 }
 .app2{
-  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(180deg, #403d39,rgb(0,4,7));
+  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(180deg, rgb(64, 61, 57),rgb(0, 4, 7));
 }
 .ralewaydots{
   font-family: "Raleway Dots", sans-serif;
@@ -101,8 +102,5 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.pp{
-   background-image: url("./assets/5e41e73ec2af60cf5cc94e67_website landing.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-}
+.rad{
+  border-radius: 70%/100%;}
