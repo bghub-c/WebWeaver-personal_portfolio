@@ -1,4 +1,4 @@
-import { DownloadSimple, UploadSimple } from "@phosphor-icons/react";
+import { DownloadSimple, UploadSimple, Stack } from "@phosphor-icons/react";
 import { m, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 export function Skills() {
@@ -57,7 +57,7 @@ export function Skills() {
           <h1 className="smartphone:text-center">
             My Skill {'"Stack"'} 
           </h1>
-          <h2 className="text-2xl mt-4 ml-8 smartphone:ml-4">Try pushing skills into the stack</h2>
+          <h2 className="text-2xl mt-4 ml-8 smartphone:ml-4 flex">Try pushing skills into the stack <Stack size={32} className="mx-2" weight="duotone" /></h2>
         </div>
         <div
           id="buttons"
