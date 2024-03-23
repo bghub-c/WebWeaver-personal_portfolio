@@ -98,7 +98,7 @@ export function X_tras() {
               <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of <span className="hidden smartphone:flex mt-5 text-sm">(Swipe down to see them slide)</span></h2>
             </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-              <m.div style={{x}} transition={{type:"spring", ease:"easeInOut"}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-in-out duration-700 transform-gpu">
+              <m.div style={{x}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-out duration-300 transform-gpu">
                 {cards.map((card) => (
                   <div
                     key={card.id}

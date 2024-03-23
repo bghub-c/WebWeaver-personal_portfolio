@@ -6,7 +6,7 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 export function Routesgrid() {
   const [hasAnimated, setHasAnimated] = useState(false);
   const animation = {
-    initial: { y: 10 },
+    initial: { y: 15 },
     Inview: { y: 0 },
   };
   return (
@@ -14,7 +14,7 @@ export function Routesgrid() {
       <LazyMotion features={domAnimation}>
         <m.div
           id="Maingrid"
-          initial={{ opacity: 0.85 }}
+          initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -27,7 +27,7 @@ export function Routesgrid() {
             <m.section variants={animation}
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
-              transition={{ delay: 0.4, type: "spring", duration: 0.5 }}
+              transition={{ delay: 0.3, type: "spring", duration: 0.5 }}
               id="abt"
               className="bg-gradient-to-br from-white to-bkgg group h-full text-whitee flex justify-between items-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -66,7 +66,7 @@ export function Routesgrid() {
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               variants={animation}
-              transition={{ delay: 1, type: "spring", duration: 0.5 }}
+              transition={{ delay: 0.9, type: "spring", duration: 0.5 }}
               id="skills"
               className="group bg-gradient-to-tr from-bkgg to-white text-whitee h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -97,7 +97,7 @@ export function Routesgrid() {
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               variants={animation}
-              transition={{ delay: 1.5, type: "spring", duration: 0.5 }}
+              transition={{ delay: 1.4, type: "spring", duration: 0.5 }}
               id="projects"
               className="group bg-gradient-to-bl from-bkgg to-white text-whitee flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
             >
@@ -127,7 +127,7 @@ export function Routesgrid() {
             whileInView={hasAnimated ? "":"Inview"}
             variants={animation}
             onAnimationComplete={() => setHasAnimated(false)}
-            transition={{ delay: 2, type: "spring", duration: 0.5 }}
+            transition={{ delay: 1.9, type: "spring", duration: 0.5 }}
             id="Work"
             className="group h-full bg-gradient-to-tl from-white to-bkgg text-whitee  flex flex-col justify-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
           >
