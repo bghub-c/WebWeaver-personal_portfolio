@@ -29,10 +29,14 @@ export function Skills() {
         title: "React.js",
         id: 6,
       },
+      {
+        title: "Framer Motion",
+        id: 7,
+      },
   ];
 
   const pushSkill = () => {
-    if(pushes<6){
+    if(pushes<7){
         setpushes(pushes + 1);
     setSkills([
       ...skills,
@@ -41,7 +45,7 @@ export function Skills() {
   };
 
   const popSkill = () => {
-    if(pushes>0&&pushes<7){
+    if(pushes>0&&pushes<8){
     setpushes(pushes - 1);
     setSkills(skills.slice(0, -1));}
     };
@@ -85,7 +89,7 @@ export function Skills() {
                     <m.span initial={{opacity:0,y:-200}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-200}} className=" flex flex-col-reverse ">
                   <div className="w-56 h-6 rad border-2 -translate-y-2 -mb-10 border-whitee"></div>
                   <div className="w-56  bg-bk z-10 translate-y-1 border-x-2 border-whitee flex justify-center items-end">
-                    <h1 className="ibm-plexmid text-3xl smartphone:text-2xl mt-4 mb-2">
+                    <h1 className="ibm-plexmid text-3xl text-center smartphone:text-2xl text-accent mt-4 mb-2">
                       {skill.title}
                     </h1>
                   </div>
