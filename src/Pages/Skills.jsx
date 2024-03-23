@@ -49,11 +49,11 @@ export function Skills() {
   return (
     <>
       <m.section initial={{opacity:0}} animate={{opacity:1}} className=" w-11/12 smartphone:w-full h-screen mx-auto flex flex-col justify-start ite text-whitee">
-        <div id="heading" className="text-7xl smartphone:text-6xl mt-5 ubuntu">
-          <h1>
-            My Skills {'"Stack"'} 
+        <div id="heading" className="text-7xl smartphone:text-6xl smartphone:text-center mt-5 ubuntu">
+          <h1 className="smartphone:text-center">
+            My Skill {'"Stack"'} 
           </h1>
-          <h2 className="text-2xl mt-4 ml-8 smartphone:ml-4">Try pushing skills to the stack</h2>
+          <h2 className="text-2xl mt-4 ml-8 smartphone:ml-4">Try pushing skills into the stack</h2>
         </div>
         <div
           id="buttons"
@@ -63,13 +63,13 @@ export function Skills() {
             onClick={pushSkill}
             className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk  font-semibold  text-whitee transition-all duration-500 hover:translate-y-[4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
           >
-            push(<span className="transition-all duration-700 group-hover:text-accent">skill</span>) <DownloadSimple size={"10%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
+            push(<span className="transition-all duration-700 group-hover:text-accent">skill</span>) <DownloadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
           </button>
           <button
             onClick={popSkill}
             className="flex group justify-center items-center h-fit mx-auto py-2 rounded-2xl border-2 border-dashed border-black bg-bk font-semibold  text-whitee transition-all duration-500  hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
           >
-            pop(<span className="transition-all duration-700 group-hover:text-accent">skill</span>) <UploadSimple size={"10%"} className="mx-5 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
+            pop(<span className="transition-all duration-700 group-hover:text-accent">skill</span>) <UploadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
           </button>
         </div>
         <section
@@ -85,7 +85,7 @@ export function Skills() {
                     <m.span initial={{opacity:0,y:-200}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-200}} className=" flex flex-col-reverse ">
                   <div className="w-56 h-6 rad border-2 -translate-y-2 -mb-10 border-whitee"></div>
                   <div className="w-56  bg-bk z-10 translate-y-1 border-x-2 border-whitee flex justify-center items-end">
-                    <h1 className="ibm-plexmid text-3xl mt-4 mb-2">
+                    <h1 className="ibm-plexmid text-3xl smartphone:text-2xl mt-4 mb-2">
                       {skill.title}
                     </h1>
                   </div>
