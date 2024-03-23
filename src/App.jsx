@@ -11,24 +11,24 @@ import { m, AnimatePresence, useScroll, useTransform, LazyMotion, domAnimation }
 import { Work } from "./Pages/Work";
 function App() {
   const { scrollY } = useScroll();
-  const scalee=useTransform(scrollY, [0, 1080], [1, 1.02]); 
+  const bgcole=useTransform(scrollY, [0, 800], ["#fffcf2", "rgb(0,4,6)"]);
+  console.log(bgcole) 
   const location = useLocation();
-  const scale = location.pathname == "/" ? scalee : 0; 
   const divdisplay = location.pathname == "/" ? "view" : "hidden";
   return (
     <>
     <LazyMotion features={domAnimation}>
       <Navbar loc={location.pathname != "/"}/>
-      <m.div style={{  scale }} className={`app transition-all duration-300 ease-in-out w-full h-full fixed top-0 -z-10 flex items-end ${divdisplay}`}>
+      <m.div style={{  backgroundColor:bgcole }} className={`transition-all duration-100 app -z-50 bg-bk ease-in-out w-full h-full fixed top-0 flex items-end ${divdisplay}`}>
         <Home />
       </m.div>
       <div className={`h-screen ${divdisplay}`}></div>
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.25, ease: "easeInOut" }}
+        transition={{ duration: 0.25, ease: "easeInOut" }}
         id="mainwrapper"
-        className="transform-gpu  w-screen h-full relative text-white bg-black flex flex-col scroll-smooth"
+        className="transform-gpu  w-screen h-full relative flex flex-col scroll-smooth"
       >
         <AnimatePresence>
           <Routes location={location} key={location.key}>
@@ -40,7 +40,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </m.div>
-      <Futter></Futter></LazyMotion>
+      <Futter loc={location.pathname != "/"}/></LazyMotion>
     </>
   );
 }

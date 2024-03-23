@@ -1,7 +1,6 @@
 //assests import
 import { m } from "framer-motion";
-export function Home() {
-  
+export function Home() { 
   const icon = {
     hidden: {
       pathLength: 0,
@@ -9,12 +8,12 @@ export function Home() {
     },
     visible: {
       pathLength: 1,
-      fill: "#edf2f4",
+      fill: "#252422",
     },
   };
   return (
     <>
-      <section className="w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
+      <section className=" w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
         <m.span
           layout
           initial={{
@@ -32,7 +31,7 @@ export function Home() {
           }}
           className="w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className="pl drop-shadow-xl text-9xl tracking-wider smartphone:text-lg text-whitee ubuntu">
+          <p className="pl drop-shadow-text-lg smartphone:drop-shadow-2xl text-9xl tracking-wider smartphone:text-5xl text-accent ubuntu">
             {"Nice To See You!"}
           </p>
         </m.span>
@@ -52,8 +51,8 @@ export function Home() {
           }}
           className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
         >
-          <p className="pl text-3xl tracking-wide laptop:text-2xl text-whitee font-semibold ibm-plexregular ">
-          👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
+          <p className="pl drop-shadow-xl text-3xl smartphone:text-sm tracking-wide text-whitee font-semibold ibm-plexregular ">
+          👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </m.span>
         <span className="grid place-content-center">
           <m.svg

@@ -1,5 +1,5 @@
 import { m, useScroll, useTransform, LazyMotion, domAnimation } from "framer-motion";
-import { Barricade } from "@phosphor-icons/react";
+import { InstagramLogo } from "@phosphor-icons/react";
 import { useRef, useEffect,useMemo } from "react";
 export function X_tras() {
   const targetRef = useRef(null);
@@ -134,17 +134,17 @@ export function X_tras() {
         exit={{opacity: 0}}
         transition={{duration: 0.5, ease: "easeInOut"}}
         id="xtramain"
-        className="flex flex-col items-center justify-center bg-black text-whitee w-screen h-full"
+        className="flex flex-col items-center justify-center bg-bk text-whitee w-screen h-full"
       >
         <section
           id="photography"
-          className="w-11/12 items-center justify-center"
+          className="w-11/12"
         >
           <section ref={targetRef} className="relative h-[300vh] smartphone:h-[500vh]">
-            <div id="text">
+            <section id="text">
               <h1 className="text-8xl smartphone:text-5xl m-16 smartphone:m-10 mt-32 smartphone:mt-10 coolfont">Photography</h1>
               <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of</h2>
-            </div>
+            </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
               <m.div style={{x}}  className="flex gap-4 transition-transform ease-in-out  transform-gpu">
                 {cards.map((card) => (
@@ -168,9 +168,8 @@ export function X_tras() {
               </m.div>
             </div>
           </section>
-          <section className="w-11/12 h-screen flex justify-center items-center text-whitee">
-        <Barricade className="mx-4 text-redd" size={100} weight="duotone" /> <br />
-        <h1 className="text-7xl  ubuntu">Coming Soon <span className="text-redd">!</span></h1>
+          <section className=" mx-auto w-11/12 h-screen flex justify-center items-center text-whitee">
+        <h1 className="flex flex-col justify-center items-center text-5xl smartphone:text-lg ibm-plexregular"> I post cool stuff here <a href="" className="group flex items-center justify-center transition-all duration-700 ease-in-out my-4 hover:text-insta"><InstagramLogo size={"13%"} weight="duotone" className="mx-2 transition-transform ease-in-out group-hover:scale-105" /> @mohd.bilal__</a></h1>
         </section>
         </section>
       </m.section>

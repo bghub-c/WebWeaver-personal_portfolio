@@ -54,13 +54,13 @@ body {
 .item {
   width: 65%;
   overflow: visible;
-  stroke: #edf2f4;
-  stroke-width: 5;
+  stroke: #252422;
+  stroke-width: 10;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
 .app2{
-  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(45deg, rgb(0,0,0),rgb(0,0,0));
+  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(45deg, rgb(0,4,7),rgb(0,4,7));
 }
 .ralewaydots{
   font-family: "Raleway Dots", sans-serif;
@@ -101,7 +101,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.app{
+.pp{
    background-image: url("./assets/5e41e73ec2af60cf5cc94e67_website landing.png");
   background-repeat: no-repeat;
   background-size:cover;
