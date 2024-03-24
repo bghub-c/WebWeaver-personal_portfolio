@@ -31,7 +31,7 @@ export function Home() {
           }}
           className="w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className="pl drop-shadow-text-lg smartphone:drop-shadow-2xl text-9xl tracking-wider smartphone:text-5xl text-accent1 ubuntu">
+          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-9xl tracking-wider smartphone:text-5xl text-accent1 ubuntu">
             {"Nice To See You!"}
           </p>
         </m.span>
@@ -49,7 +49,7 @@ export function Home() {
             delay: 1.5,
             ease:"easeInOut"
           }}
-          className="pl p-7 z-10 row-start-2 flex flex-col justify-start"
+          className=" p-7 z-10 row-start-2 flex flex-col justify-start "
         >
           <p className="pl drop-shadow-xl text-3xl smartphone:text-sm tracking-wide text-bg1 font-semibold ibm-plexregular ">
           👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>

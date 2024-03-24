@@ -19,15 +19,14 @@ return(
         </div>
         <div className="flex flex-col justify-start smartphone:justify-center">
         <ul className="flex smartphone:justify-center ">
-            <li className="h-full w-1/5 mr-3 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-insta p-3/4"><InstagramLogo size={32} weight="duotone" /></li>
-            <li className="h-full w-1/5 mx-3 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-lnkin  p-3/4"><LinkedinLogo size={32} weight="duotone" /></li> 
+            <li className="h-full w-1/5 mr-3 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-insta p-3/4"><a href="https://www.instagram.com/mohd.bilal__?igsh=MW9ydDcwcTR4dmVjaQ==" target="_blank" ><InstagramLogo size={32} weight="duotone" /></a></li>
+            <li className="h-full w-1/5 mx-3 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-lnkin  p-3/4"><a href="https://www.linkedin.com/in/mohd--bilal--?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><LinkedinLogo size={32} weight="duotone" /></a></li> 
         </ul>
         <a href="mailto:mohammadbilal.mail@gmail.com?subject=Hi%20Bilal%20-%20[%20Edit%20according%20to%20your%20needs%20]%20"
-  className= {`group flex mt-4 ibm-plexregular hover:text-green-900 hover:font-semibold transition-all duration-300`}>Email me here<ArrowCircleUpRight className="mx-1 transition-all duration-500  group-hover:translate-x-1 group-hover:-translate-y-1" size={25} weight="duotone" /></a>
+  className= {`group flex mt-4 ibm-plexregular text-xl hover:text-green-900 hover:font-semibold transition-all duration-300`}>Email me here<ArrowCircleUpRight className="mx-1 transition-all duration-500  group-hover:translate-x-1 group-hover:-translate-y-1" size={30} weight="duotone" /></a>
        </div>
     </section>
  <ArrowCircleUp onClick={handleScrollToTop} className="fixed opacity-15 hover:opacity-100 transition-all bottom-20 right-4" size={32} weight="duotone" />
-
     </div>
 )
 }
