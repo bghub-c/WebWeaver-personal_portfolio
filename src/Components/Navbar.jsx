@@ -16,7 +16,7 @@ export function Navbar({loc}){
             ease:"easeInOut"
         }}
         className="w-screen h-nav backdrop-brightness-75 pb-2 text-bg1 flex tablet:flex-col smartphone:flex-col justify-between items-center sticky top-0">
-            <h1 className="ubuntu transition-all text-5xl"> <span className="text-accent1 pr-3" >{"<"}</span>MohdBilal<span className="text-accent1 pl-5">{"/>"}</span> </h1>
+            <a href="/"><h1 className="ubuntu transition-all text-5xl"> <span className="text-accent1 pr-3" >{"<"}</span>MohdBilal<span className="text-accent1 pl-5">{"/>"}</span> </h1></a>
             <ul className=" flex items-center">
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200 text-bg1 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-insta p-3/4"> <a target="_blank" href="https://www.instagram.com/mohd.bilal__?igsh=MW9ydDcwcTR4dmVjaQ=="><InstagramLogo size={32} weight="duotone" /></a></li>
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200 text-bg1 transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-lnkin  p-3/4"> <a target="_blank" href="https://www.linkedin.com/in/mohd--bilal--?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedinLogo size={32} weight="duotone" /> </a></li>
