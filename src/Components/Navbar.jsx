@@ -12,7 +12,6 @@ export function Navbar({loc}){
         }}
         transition={{
             duration:0.5,
-            type:"spring",
             delay:0.75,
             ease:"easeInOut"
         }}

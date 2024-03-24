@@ -111,7 +111,7 @@ export function X_tras() {
                       alt={card.title}
                     />
                     <div className="absolute bottom-2 left-2 z-10 place-content-center translate-y-24 group-hover:-translate-y-2 grid transition-transform duration-700 ease-in-out">
-                      <p className="bg-gradient-to-bl from-black/20 to-white/0 p-4 text-2xl font-black text-bk backdrop-blur-sm">
+                      <p className="bg-gradient-to-bl from-black/20 to-white/0 p-4 text-2xl font-black text-w1 backdrop-blur-sm">
                         {card.title}
                       </p>
                     </div>
@@ -121,7 +121,7 @@ export function X_tras() {
             </div>
           </section>
           <section className=" mx-auto w-11/12 h-screen flex justify-center items-center text-whitee">
-        <h1 className="flex flex-col justify-center items-center text-5xl smartphone:text-lg ibm-plexregular"> I post cool stuff here <a href="" className="group flex items-center justify-center transition-all duration-700 ease-in-out my-4 hover:text-insta"><InstagramLogo size={"13%"} weight="duotone" className="mx-2 transition-transform ease-in-out group-hover:scale-105" /> @mohd.bilal__</a></h1>
+        <h1 className="flex flex-col justify-center items-center text-5xl smartphone:text-lg ibm-plexregular"> I post cool stuff here <a href="https://www.instagram.com/mohd.bilal__?igsh=MW9ydDcwcTR4dmVjaQ==" className="group flex items-center justify-center transition-all duration-700 ease-in-out my-4 hover:text-insta"><InstagramLogo size={"13%"} weight="duotone" className="mx-2 transition-transform ease-in-out group-hover:scale-105" /> @mohd.bilal__</a></h1>
         </section>
         </section>
       </m.section>
