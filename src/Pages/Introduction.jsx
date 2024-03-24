@@ -16,7 +16,7 @@ export function Introduction() {
           <m.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.5, duration: 0.5, type: "spring" }}
+            transition={{ delay: 1.7, duration: 0.5, type: "spring" }}
             className=" mt-16 text-3xl smartphone:text-lg smartphone:text-center  ubuntu"
           >
             Ahoy! <span className="coolfont mr-2 ml-2 text-accent1">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
@@ -26,7 +26,7 @@ export function Introduction() {
           <m.div
             initial={{ y: 320 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.75, duration: 0.5, type: "spring" }}
+            transition={{ delay: 1.95, duration: 0.5, type: "spring" }}
             className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center"
           >
             <p className="  text-2xl smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">

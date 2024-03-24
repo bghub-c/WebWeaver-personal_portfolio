@@ -66,13 +66,13 @@ export function Skills() {
         >
           <button
             onClick={popSkill}
-            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk font-semibold  text-whitee transition-all duration-500  hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
+            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk font-semibold  text-whitee transition-all duration-500  hover:translate-y-[-4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
           >
             pop(<span className="transition-all duration-700 group-hover:text-accent1">skill</span>) <UploadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
           </button>
           <button
             onClick={pushSkill}
-            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk  font-semibold  text-whitee transition-all duration-500 hover:translate-y-[4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
+            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black bg-bk  font-semibold  text-whitee transition-all duration-500 hover:translate-y-[4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
           >
             push(<span className="transition-all duration-700 group-hover:text-accent1">skill</span>) <DownloadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
           </button>
