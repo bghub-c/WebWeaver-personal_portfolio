@@ -64,8 +64,10 @@ body {
   stroke-linejoin: round;
   stroke-linecap: round;
 }
-.app2{
-  background-image: repeating-linear-gradient(90deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(249,249,249, 0.16) 0px, rgba(249,249,249, 0.16) 1px,transparent 1px, transparent 104px),repeating-linear-gradient(0deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),repeating-linear-gradient(90deg, rgba(255,255,255, 0.12) 0px, rgba(255,255,255, 0.12) 1px,transparent 1px, transparent 52px),linear-gradient(180deg, rgb(64, 61, 57),rgb(0, 4, 7));
+.app2{ 
+opacity: 0.1;
+background-image: radial-gradient(#252422 1.75px, #ffffff00 1.75px);
+background-size: 35px 35px;
 }
 .ralewaydots{
   font-family: "Raleway Dots", sans-serif;
