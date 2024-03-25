@@ -1,7 +1,7 @@
 import { DownloadSimple, UploadSimple, Stack } from "@phosphor-icons/react";
 import { m, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
-export function Skills() {
+export function Skills() { window.scrollTo({top:0})
   const [skills, setSkills] = useState([]);
   const [pushes, setpushes] = useState(0);
   const popy= window.innerWidth<=720?85:200;
@@ -56,46 +56,39 @@ export function Skills() {
       <m.section initial={{opacity:0}} animate={{opacity:1}} transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }} className=" w-11/12 smartphone:w-full h-screen mx-auto flex flex-col justify-start  text-w1">
         <div id="heading" className="overflow-hidden text-7xl smartphone:text-6xl smartphone:text-center mt-5 ubuntu">
           <m.h1 initial={{
-            y: 500,
+            y: 200,
           }}
           animate={{
             y: 0,
           }}
           transition={{
-            duration:0.5,
-            delay: 1.2,
-            ease:"easeInOut"
-          }} className="smartphone:text-center">
+            duration:0.5, delay: 1.2,ease:"easeInOut", type:"spring" 
+          }} className="smartphone:text-center tracking-widest smartphone:tracking-wider">
             My Skill <span className="text-accent2">{'"Stack"'}</span>  
-            <h2 className="text-2xl smartphone:justify-center smartphone:text-xl mt-4 ml-8 smartphone:ml-4 flex">Try pushing skills into the stack <Stack size={32} className="mx-2" weight="duotone" /></h2>
+            <h2 className="text-2xl smartphone:justify-center smartphone:text-xl mt-4 ml-8 smartphone:ml-4 flex tracking-wider">Try pushing skills into the stack <Stack size={32} className="mx-2 text-accent2lt" weight="duotone" /></h2>
           </m.h1>
         </div>
         <m.div
         initial={{
-          y: 100
+          y: 200, opacity:0.75
         }}
         animate={{
-          y: 0,
+          y: 0,opacity:1
         }}
         transition={{
-          duration:0.5,
-          delay: 1.7,
-          ease:"easeInOut"
+          duration:0.5, delay: 1.7, ease:"easeInOut", type:"spring" 
         }}
           id="buttons"
-          className="flex justify-center  text-4xl smartphone:text-xl  mt-9 "
-        >
+          className="flex justify-center  text-4xl smartphone:text-xl  mt-9 ">
           <button
             onClick={popSkill}
-            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black text-bg2 bg-w1 font-semibold  text-whitee transition-all duration-500  hover:translate-y-[-4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
-          >
-            pop(<span className="transition-all duration-700 group-hover:text-accent2lt">skill</span>) <UploadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
+            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black text-bg2 tracking-wide bg-w1 font-semibold  text-whitee transition-all duration-500  hover:translate-y-[-4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg">
+            pop(<span className="transition-all duration-700 group-hover:text-accent2lt px-1">skill</span>) <UploadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
           </button>
           <button
             onClick={pushSkill}
-            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black text-bg2 bg-w1  font-semibold  text-whitee transition-all duration-500 hover:translate-y-[4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg"
-          >
-            push(<span className="transition-all duration-700 group-hover:text-accent2lt">skill</span>) <DownloadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
+            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-4 py-2 rounded-2xl border-2 border-dashed border-black text-bg2 tracking-wide bg-w1  font-semibold  text-whitee transition-all duration-500 hover:translate-y-[4px] hover:rounded-xl hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-lg">
+            push(<span className="transition-all duration-700 group-hover:text-accent2lt px-1">skill</span>) <DownloadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
           </button>
         </m.div>
         <section
