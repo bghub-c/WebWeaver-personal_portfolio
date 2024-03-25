@@ -6,7 +6,7 @@ import { m, LazyMotion, domAnimation } from "framer-motion";
 export function Routesgrid() {
   const [hasAnimated, setHasAnimated] = useState(false);
   const animation = {
-    initial: { y: 20 },
+    initial: { y: 10 },
     Inview: { y: 0 },
   };
   return (
