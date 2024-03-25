@@ -63,7 +63,7 @@ export function Skills() {
           }}
           transition={{
             duration:0.5,
-            delay: 1.5,
+            delay: 1.2,
             ease:"easeInOut"
           }} className="smartphone:text-center">
             My Skill <span className="text-accent2">{'"Stack"'}</span>  
@@ -79,7 +79,7 @@ export function Skills() {
         }}
         transition={{
           duration:0.5,
-          delay: 2,
+          delay: 1.7,
           ease:"easeInOut"
         }}
           id="buttons"
