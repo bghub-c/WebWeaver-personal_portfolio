@@ -13,7 +13,7 @@ export function Home() {
   };
   return (
     <>
-      <section className=" w-full h-fit grid-flow-row grid-rows-auto ml-1	z-5 overflow-hidden">
+      <section className=" w-full h-fit grid-flow-row grid-rows-auto ml-1 smartphone:ml-0	z-5 overflow-hidden">
         <m.span
           layout
           initial={{
@@ -29,9 +29,9 @@ export function Home() {
             delay: 1.5,
             ease:"easeInOut"
           }}
-          className=" w-full h-1/2 pl flex flex-col justify-center"
+          className=" w-full h-1/2 pl-32 smartphone:pl-4 flex flex-col justify-center"
         >
-          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-accent1 ubuntu">
+          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-accent3 ubuntu">
             {"Such a delight to see you here!"}
           </p>
         </m.span>
@@ -49,9 +49,9 @@ export function Home() {
             delay: 2,
             ease:"easeInOut"
           }}
-          className=" p-7 z-10 row-start-2 flex flex-col justify-start "
+          className=" p-8 z-10 row-start-2 flex flex-col justify-start "
         >
-          <p className="pl-20 smartphone:pl-0 drop-shadow-xl text-3xl smartphone:text-sm tracking-wide text-bg1 font-semibold ibm-plexregular ">
+          <p className="pl-28 smartphone:pl-0 drop-shadow-xl text-3xl smartphone:text-sm tracking-tight text-bg1 font-semibold ibm-plexregular ">
           👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </m.span>
         <span className="grid place-content-center bg-w1">
@@ -68,8 +68,8 @@ export function Home() {
               animate="visible"
               whileHover="visible"
               transition={{
-                default: { delay: 3, duration: 2.5, ease: "easeInOut" },
-                fill: { delay: 3.5, duration: 3 , ease: [1, 0, 0.8, 1] },
+                default: { delay: 2, duration: 2.5, ease: "easeInOut" },
+                fill: { delay: 2.5, duration: 3 , ease: [1, 0, 0.8, 1] },
               }}
             />
           </m.svg>

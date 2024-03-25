@@ -1,4 +1,4 @@
-export function Work() {
+export function Work() { window.scrollTo({top:0})
   const projects = [
     {
       
