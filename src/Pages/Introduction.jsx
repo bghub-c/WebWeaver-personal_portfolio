@@ -7,11 +7,11 @@ export function Introduction() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }}
-        className="h-full w-screen flex justify-center bg-bg2 text-w1"
+        className="h-full w-screen flex justify-center bg-cp2bg4 text-bg2"
       >
         <div className="w-1/2 smartphone:w-11/12">
           <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 smartphone:mt-16  flex items-end">
-            Hello There <span className="text-accent1 ml-4 h-full">!</span>
+            Hello There <span className="text-cp2accent ml-4 h-full">!</span>
           </h1>
           <m.h2
             initial={{ y: 300 }}
@@ -19,7 +19,7 @@ export function Introduction() {
             transition={{ delay: 1.7, duration: 0.5, type: "spring" }}
             className=" mt-16 text-3xl smartphone:text-lg smartphone:text-center  ubuntu"
           >
-            Ahoy! <span className="coolfont mr-2 ml-2 text-accent1">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
+            Ahoy! <span className="coolfont mr-2 ml-2 text-cp2accent">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
             <span className=" tracking-widestestcum ml-1">Crafting</span>,{" digital marvels? You bet! Join me, and"} <br className="smartphone:hidden" /> {"let's "}
             <span className=" tracking-widestestcum ml-1 ">weave wonders</span> together. Cheers!
           </m.h2>
@@ -31,11 +31,11 @@ export function Introduction() {
           >
             <p className="  text-2xl smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">
             Consider me your go-getter enthusiast
-              or your friendly neighborhood web wizard. {"I'm"} all about coding and creating with gusto, infusing every project with a splash of creativity while keeping ethics in check.<span className="tracking-wide font-semibold text-accent1">
+              or your friendly neighborhood web wizard. {"I'm"} all about coding and creating with gusto, infusing every project with a splash of creativity while keeping ethics in check.<span className="tracking-wide font-semibold text-cp2accent">
                 {" My mission?"}
               </span>  To deliver jaw-dropping results that make both you and your users say 
               
-              <span className="tracking-wide text-accent1 font-bold">
+              <span className="tracking-wide text-cp2accent font-bold">
                 {" 'Wow'"}
               </span>
               {".So, if you're after a web developer who's totally hooked on crafting digital magic, look no further—I'm your guy!"}

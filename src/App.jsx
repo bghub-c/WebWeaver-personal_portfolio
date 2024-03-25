@@ -11,7 +11,7 @@ import { m, AnimatePresence, useScroll, useTransform, LazyMotion, domAnimation }
 import { Work } from "./Pages/Work";
 function App() {
   const { scrollY } = useScroll();
-  const bgcole=useTransform(scrollY, [0, 850], ["#e9ecef", "#0b090a"]);
+  const bgcole=useTransform(scrollY, [0, 850], ["#fffcf2", "#ccc5b9"]);
   console.log(bgcole) 
   const location = useLocation();
   const divdisplay = location.pathname == "/" ? "view" : "hidden";

@@ -86,7 +86,7 @@ export function X_tras() {
         animate={{opacity: 1}}
         transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }}
         id="xtramain"
-        className="flex flex-col items-center justify-center bg-bg2 text-w1 w-screen h-full"
+        className="flex flex-col items-center justify-center bg-cp2bg4 text-bg2 w-screen h-full"
       >
         <section
           id="photography"

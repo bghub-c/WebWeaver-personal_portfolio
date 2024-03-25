@@ -11,7 +11,7 @@ export function Futter({loc}){
     }
     console.log(loc)
 return(
-    <div className={`${loc?"w-11/12 mt-5 border-y bg-bg2 text-w1":" bg-bg1 text-w1 "} mx-auto border-bg2 h-fit flex  justify-center`}>
+    <div className={`${loc?"w-11/12 mt-5 border-y bg-cp2bg4 text-bg2":" bg-cp2bg3 text-cp2bg1 "} mx-auto border-bg2 h-fit flex  justify-center`}>
     <section  id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white mb-4  w-8/12 smartphone:w-full">
         <div className="group ml-5 p-2 mt-7 smartphone:items-center">
         <m.h1 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.6, type:"tween"}} className="flex smartphone:flex-col smartphone:text-5xl items-end smartphone:items-center text-8xl ubuntu">Drop a hello!<HandWaving className="transition-colors duration-300 ml-2 smartphone:hidden  group-hover:text-green-900" size={100} weight="duotone" /></m.h1>

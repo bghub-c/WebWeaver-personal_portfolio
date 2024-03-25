@@ -31,7 +31,7 @@ export function Home() {
           }}
           className=" w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-accent1 ubuntu">
+          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-cp2accent ubuntu">
             {"Such a delight to see you here!"}
           </p>
         </m.span>
@@ -54,7 +54,7 @@ export function Home() {
           <p className="pl-20 smartphone:pl-0 drop-shadow-xl text-3xl smartphone:text-sm tracking-wide text-bg1 font-semibold ibm-plexregular ">
           👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </m.span>
-        <span className="grid place-content-center bg-w1">
+        <span className="grid place-content-center bg-cp2bg4">
           <m.svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
