@@ -7,7 +7,7 @@ export function Introduction() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }}
-        className="h-full w-screen flex justify-center bg-w1 text-bg1"
+        className="h-full w-screen flex justify-center bg-bg2 text-w1"
       >
         <div className="w-1/2 smartphone:w-11/12">
           <h1 className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 smartphone:mt-16  flex items-end">
