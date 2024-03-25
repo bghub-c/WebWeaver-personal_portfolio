@@ -43,7 +43,7 @@ export function X_tras() { window.scrollTo({top:0})
               duration:0.5,
               delay: 2,
               ease:"easeInOut"
-            }} className="text-3xl w-full smartphone:text-xl ml-24 smartphone:ml-16 ubuntu text-accent2lt tracking-wide smartphone:tracking-normal">:) Some clicks that {"I'm"} proud of <span className="hidden text-w1 smartphone:flex mt-5 ml-5 text-sm">(Swipe down to see them slide)</span></m.h2>
+            }} className="text-3xl w-full smartphone:text-xl ml-24 smartphone:ml-16 ubuntu tracking-wide smartphone:tracking-normal"> <span className="text-accent2lt">:)</span> Some clicks that {"I'm"} proud of <span className="hidden text-w1 smartphone:flex mt-5 ml-5 text-sm">(Swipe down to see them slide)</span></m.h2>
             </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
               <m.div style={{x}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-out duration-300 transform-gpu">

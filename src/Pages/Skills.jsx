@@ -1,7 +1,8 @@
 import { DownloadSimple, UploadSimple, Stack } from "@phosphor-icons/react";
 import { m, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
-export function Skills() { window.scrollTo({top:0})
+export function Skills() { 
+  window.scrollTo({top:0})
   const [skills, setSkills] = useState([]);
   const [pushes, setpushes] = useState(0);
   const popy= window.innerWidth<=720?85:200;

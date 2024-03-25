@@ -6,7 +6,7 @@ export function Navbar({loc}){
         case "/TalentArsenal":{ accentcol="text-accent2"; break}
         case "/Extras":{ accentcol="text-accent2lt"; break}
         case "/work":{ accentcol="text-accent2lt"; break}
-        default:{{ accentcol="text-accent3"}}
+        default:{{ accentcol="text-accent1"}}
     }
     console.log(accentcol)
     return(
