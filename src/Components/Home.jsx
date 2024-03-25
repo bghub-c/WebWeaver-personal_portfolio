@@ -31,7 +31,7 @@ export function Home() {
           }}
           className=" w-full h-1/2 pl flex flex-col justify-center"
         >
-          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-accent1 ubuntu">
+          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl tracking-wider smartphone:text-3xl text-accent3 ubuntu">
             {"Such a delight to see you here!"}
           </p>
         </m.span>

@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <LazyMotion features={domAnimation}>
-      <Navbar loc={location.pathname != "/"}/>
+      <Navbar loc={location.pathname}/>
       <m.div style={{  backgroundColor:bgcole }} className={`transition-all duration-100 app -z-50 bg-bk ease-in-out w-full h-full fixed top-0 flex items-end ${divdisplay}`}>
         <Home />
       </m.div>

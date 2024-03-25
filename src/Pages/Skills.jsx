@@ -54,13 +54,34 @@ export function Skills() {
   return (
     <>
       <m.section initial={{opacity:0}} animate={{opacity:1}} transition={{ delay: 0.75, duration: 0.50, ease:"easeInOut" }} className=" w-11/12 smartphone:w-full h-screen mx-auto flex flex-col justify-start  text-w1">
-        <div id="heading" className="text-7xl smartphone:text-6xl smartphone:text-center mt-5 ubuntu">
-          <h1 className="smartphone:text-center">
+        <div id="heading" className="overflow-hidden text-7xl smartphone:text-6xl smartphone:text-center mt-5 ubuntu">
+          <m.h1 initial={{
+            y: 500,
+          }}
+          animate={{
+            y: 0,
+          }}
+          transition={{
+            duration:0.5,
+            delay: 1.5,
+            ease:"easeInOut"
+          }} className="smartphone:text-center">
             My Skill <span className="text-accent2">{'"Stack"'}</span>  
-          </h1>
-          <h2 className="text-2xl smartphone:justify-center smartphone:text-xl mt-4 ml-8 smartphone:ml-4 flex">Try pushing skills into the stack <Stack size={32} className="mx-2" weight="duotone" /></h2>
+            <h2 className="text-2xl smartphone:justify-center smartphone:text-xl mt-4 ml-8 smartphone:ml-4 flex">Try pushing skills into the stack <Stack size={32} className="mx-2" weight="duotone" /></h2>
+          </m.h1>
         </div>
-        <div
+        <m.div
+        initial={{
+          y: 100
+        }}
+        animate={{
+          y: 0,
+        }}
+        transition={{
+          duration:0.5,
+          delay: 2,
+          ease:"easeInOut"
+        }}
           id="buttons"
           className="flex justify-center  text-4xl smartphone:text-xl  mt-9 "
         >
@@ -76,17 +97,17 @@ export function Skills() {
           >
             push(<span className="transition-all duration-700 group-hover:text-accent2lt">skill</span>) <DownloadSimple size={"12%"} className="mx-5 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
           </button>
-        </div>
+        </m.div>
         <section
           id="stack"
-          className="mx-auto mt-[100px]"
+          className="mx-auto mt-[100px] "
         >
           <div className="relative transition-transform ease-in-out w-72 h-72">
             <div className=" inset-0  flex flex-col-reverse items-center justify-end">
             <AnimatePresence>
               {skills.map((skill) => (
                 <React.Fragment key={skill.id}> 
-                    <m.span initial={{opacity:0,y:-1*popy}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-1*popy}} className=" flex flex-col-reverse ">
+                    <m.span initial={{opacity:0,y:-1*popy}} animate={{opacity:1,y:0,z:pushes}} exit={{opacity:0,y:-1*popy}} className=" flex flex-col-reverse ">
                   <div className="w-56 h-6 rad border-2 -translate-y-2 -mb-10 bg-w1 border-accent2"></div>
                   <div className="w-56  bg-w1 z-10 translate-y-1 border-x-2 border-accent2 flex justify-center items-end">
                     <h1 className="ibm-plexmid text-3xl text-center smartphone:text-2xl text-accent2lt mt-4 mb-2 translate-y-1">
@@ -95,8 +116,8 @@ export function Skills() {
                   </div>
                   <div
                     className={`w-56 h-6 rad ${
-                      skill.id === pushes ? "border-4 bg-w1" : "border-b-4"
-                    } border-accent2 z-20 translate-y-4`}
+                      skill.id === pushes ? "border-4 " : "border-b-4 "
+                    } border-accent2 bg-bg3 z-20 translate-y-4`}
                   ></div></m.span>
                 </React.Fragment>
               ))}</AnimatePresence>

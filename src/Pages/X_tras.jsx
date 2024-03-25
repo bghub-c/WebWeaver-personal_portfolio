@@ -93,9 +93,30 @@ export function X_tras() {
           className="w-11/12"
         >
           <section ref={targetRef} className="relative h-[450vh] smartphone:h-[500vh]">
-            <section id="text" className="">
-              <h1 className="text-8xl smartphone:text-5xl m-16 smartphone:m-10 mt-32 smartphone:mt-10 coolfont">Photography</h1>
-              <h2 className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu">:) Some clicks that {"I'm"} proud of <span className="hidden smartphone:flex mt-5 text-sm">(Swipe down to see them slide)</span></h2>
+            <section
+             id="text" className="overflow-hidden">
+              <m.h1 initial={{
+              y: 300,
+            }}
+            animate={{
+              y: 0,
+            }}
+            transition={{
+              duration:0.5,
+              delay: 1.5,
+              ease:"easeInOut"
+            }} className="text-8xl smartphone:text-5xl m-16 smartphone:m-10 mt-32 smartphone:mt-10 coolfont">Photography</m.h1>
+              <m.h2 initial={{
+              y: 400,
+            }}
+            animate={{
+              y: 0,
+            }}
+            transition={{
+              duration:0.5,
+              delay: 2,
+              ease:"easeInOut"
+            }} className="text-3xl smartphone:text-xl ml-24 smartphone:ml-16 ubuntu text-accent2lt">:) Some clicks that {"I'm"} proud of <span className="hidden smartphone:flex mt-5 text-sm">(Swipe down to see them slide)</span></m.h2>
             </section>
             <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
               <m.div style={{x}}  className="flex gap-4 smartphone:gap-2 transition-transform ease-out duration-300 transform-gpu">
