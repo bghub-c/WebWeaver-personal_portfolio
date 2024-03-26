@@ -18,9 +18,8 @@ export function Work() {
       src: "/Landingpage.mp4",
       subtitle:
         "Designed using HTML, Tailwind CSS, and JavaScript to create captivating parallax effects that enhance user engagement and elevate the visual appeal.",
-      skills: [{ id: 12,comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
-      colour: "bg-bg1",
-      colourtext: "text-w1",
+        skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> }],      colour: "bg-bg1",
+      colourtext: "text-zinc-300",
     },
     {
       id: 3,
@@ -28,16 +27,18 @@ export function Work() {
       src: "/picc10.jpg",
       subtitle:
         "Utilizing HTML, Tailwind CSS, JavaScript, and API integration for efficient link management.",
-      skills: [{ id: 12, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
-      colour: "bg-red-500",
+      skills: [{ id: 13, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /></> }],
+      colour: "bg-green-500",
+      colourtext: "text-w1",
     },
     {
       id: 4,
       title: "Music player",
       src: "/Musicplayer.mp4",
       subtitle: "Developed using HTML, Tailwind CSS, and Howler.js.",
-      skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
+      skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> }],
       colour: "bg-w1",
+      colourtext: "text-bg1",
     },
   ];
   return (
