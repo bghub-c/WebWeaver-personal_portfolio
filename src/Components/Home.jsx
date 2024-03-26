@@ -17,15 +17,14 @@ export function Home() {
         <m.span
           layout
           initial={{
-            y: -500,
-            opacity: 0,
+            y: -120,
           }}
           animate={{
-            y: 0,
-            opacity: 1,
+            y: [-110,0]
           }}
           transition={{
-            duration:0.5,
+            duration:0.7,
+            type:"tween",
             delay: 1.5,
             ease:"easeInOut"
           }}
@@ -37,24 +36,23 @@ export function Home() {
         </m.span>
         <m.span
           initial={{
-            y: 300,
-            opacity: 0,
+            y: 400,
           }}
           animate={{
-            y: 0,
-            opacity: 1,
+            y: [230,0]
           }}
           transition={{
-            duration:0.5,
+            duration:0.7,
+            type:"tween",
             delay: 2,
-            ease:"easeInOut"
+            ease:"backInOut"
           }}
           className=" p-8 z-10 row-start-2 flex flex-col justify-start "
         >
-          <p className="pl-28 smartphone:pl-0 drop-shadow-xl text-3xl smartphone:text-sm tracking-tight text-bg1 font-semibold ibm-plexregular ">
+          <p className="pl-28 z-10 smartphone:pl-0 drop-shadow-xl text-3xl smartphone:text-sm tracking-tight text-bg1 font-semibold ibm-plexregular ">
           👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </m.span>
-        <span className="grid place-content-center bg-w1">
+        <span className="grid place-content-center z-50 bg-w1">
           <m.svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -69,7 +67,7 @@ export function Home() {
               whileHover="visible"
               transition={{
                 default: { delay: 2, duration: 2.5, ease: "easeInOut" },
-                fill: { delay: 2.5, duration: 3 , ease: [1, 0, 0.8, 1] },
+                fill: { delay: 2.5, duration: 2 , ease: [1, 0, 0.8, 1] },
               }}
             />
           </m.svg>

@@ -1,30 +1,43 @@
-export function Work() { window.scrollTo({top:0})
+import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs } from "@phosphor-icons/react";
+export function Work() {
   const projects = [
     {
-      
-        id:1,
+      id: 1,
       title: "Portfoio",
-      subtitle: "Aur cheezain daalo beyy",
-      skills: "",
+      src: "/picc5.jpg",
+      subtitle:
+        "Crafted with React.js and Tailwind CSS with beautiful animations with Framer motion featuring my expertise and project highlights.",
+      skills: [{ id: 11,comp:<><Atom size={38} weight="duotone" className="mx-1 group-hover:text-react group-hover:scale-105 transition-all duration-300" /> <FramerLogo size={38} weight="duotone" className="mx-1 group-hover:text-w2 group-hover:scale-105 transition-all duration-300" /> <Waves size={32} weight="duotone" className="mx-1 group-hover:text-blue-300 group-hover:scale-105 transition-all duration-300" /> </> }],
+      colour: "bg-bg3",
+      colourtext: "text-w1",
     },
     {
-        id:2,
-        title: "ParallaxLandingPAge",
-        subtitle: "Aur cheezain daalo beyy",
-        skills: "",
-      },
-      {
-        id:3,
-        title: "Url shortener",
-        subtitle: "Aur cheezain daalo beyy",
-        skills: "",
-      },
-      {
-        id:4,
-        title: "Music player",
-        subtitle: "Aur cheezain daalo beyy",
-        skills: "",
-      },
+      id: 2,
+      title: "ParallaxLandingPAge",
+      src: "/Landingpage.mp4",
+      subtitle:
+        "Designed using HTML, Tailwind CSS, and JavaScript to create captivating parallax effects that enhance user engagement and elevate the visual appeal.",
+      skills: [{ id: 12,comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
+      colour: "bg-bg1",
+      colourtext: "text-w1",
+    },
+    {
+      id: 3,
+      title: "Url shortener",
+      src: "/picc10.jpg",
+      subtitle:
+        "Utilizing HTML, Tailwind CSS, JavaScript, and API integration for efficient link management.",
+      skills: [{ id: 12, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
+      colour: "bg-red-500",
+    },
+    {
+      id: 4,
+      title: "Music player",
+      src: "/Musicplayer.mp4",
+      subtitle: "Developed using HTML, Tailwind CSS, and Howler.js.",
+      skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-html group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-css group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-js group-hover:scale-105 transition-all duration-300"  /></> }],
+      colour: "bg-w1",
+    },
   ];
   return (
     <>
@@ -33,19 +46,41 @@ export function Work() { window.scrollTo({top:0})
           <section
             key={project.id}
             id="Currentproject"
-            className="bg-black text-white smartphone:flex smartphone:flex-col grid gap-2 grid-cols-6 w-11/12 smartphone:w-full h-fit p-6"
+            className="relative flex smartphone:flex-col w-full px-2 smartphone:h-[350px] h-screen ubuntu"
           >
-            <div className="col-span-4 rounded-lg overflow-hidden bg-red-600">
-              <img
-                src="/public/Lpg.gif"
-                alt=""
-                className="h-[700px] smartphone:h-[250px]"
-              />
-            </div>
-            <div className="col-span-2 ">
-              <h1 className="text-5xl mx-3">{project.title}</h1>
-              <h2>{project.subtitle}</h2>
-            </div>
+            <section
+              id="1st"
+              className={`group relative flex flex-col justify-center items-center z-20 w-1/2 h-full ${project.colourtext}`}
+            >
+              <div
+                className={`absolute w-full h-full ${project.colour} opacity-50`}
+              ></div>
+              <div id="text" className="w-[400px] smartphone:w-[150px] z-30">
+                <h1 className="text-5xl smartphone:text-3xl">0{project.id}</h1>
+                <h2 className="text-3xl smartphone:text-xl pt-3">
+                  {project.title}
+                </h2>
+                <h3 className="text-xl smartphone:text-sm pt-1 ">
+                  {project.subtitle}
+                </h3>
+                <div id="techstack">
+                  {project.skills.map((skill) => (
+                    <div
+                      key={skill.id}
+                      className="flex flex-row mt-3"
+                    >
+                      {skill.comp}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+            <section id="2nd" className="w-1/2"></section>
+            <img
+              src={project.src}
+              className="absolute h-full z-10 object-cover "
+              alt=""
+            />
           </section>
         ))}
       </section>

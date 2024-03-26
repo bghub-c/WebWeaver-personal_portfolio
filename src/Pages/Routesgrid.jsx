@@ -22,14 +22,14 @@ export function Routesgrid() {
         >
           <Link
             to="/Introduction"
-            className="smartphone:h-1/4 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+            className="smartphone:h-1/4 flex flex-col row-start-2 col-start-2 col-span-4 row-span-3 "
           >
             <m.section variants={animation}
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               transition={{ delay: 0.3, type: "spring", duration: 0.2 }}
               id="abt"
-              className="bg-gradient-to-br from-white to-w2 group h-full text-bg1 flex justify-between items-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="bg-gradient-to-br from-white to-w2 group h-full text-bg1 flex justify-between items-center rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
               <div className="flex flex-col smartphone:my-3 smartphone:items-center smartphone:justify-center">
                 <h1
@@ -60,7 +60,7 @@ export function Routesgrid() {
           </Link>
           <Link
             to="/TalentArsenal"
-            className="smartphone:h-1/4 row-start-2 col-start-6 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+            className="smartphone:h-1/4 row-start-2 col-start-6 col-span-2 row-span-3"
           >
             <m.section
               initial="initial"
@@ -68,7 +68,7 @@ export function Routesgrid() {
               variants={animation}
               transition={{ delay: 0.9, type: "spring", duration: 0.2 }}
               id="skills"
-              className="group bg-gradient-to-br from-bg2 to-bg1 text-w2 h-full flex flex-col rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="group bg-gradient-to-br from-bg2 to-bg1 text-w2 h-full flex flex-col rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
               <h1
                 className={`my-1  text-6xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6 group-hover:translate-x-2
@@ -91,7 +91,7 @@ export function Routesgrid() {
           </Link>
           <Link
             to="/Extras"
-            className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+            className="smartphone:h-1/4 row-start-5 col-start-2 col-span-2 row-span-3"
           >
             <m.section
               initial="initial"
@@ -99,7 +99,7 @@ export function Routesgrid() {
               variants={animation}
               transition={{ delay: 1.4, type: "spring", duration: 0.2 }}
               id="projects"
-              className="group bg-gradient-to-br from-accent2 to-accent2lt text-w2 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+              className="group bg-gradient-to-br from-accent2 to-accent2lt text-w2 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
               <h1
                 className={`my-1 text-6xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6  group-hover:translate-x-2 transition-all duration-300 ease-in-out ubuntu tracking-wider`}
@@ -120,7 +120,7 @@ export function Routesgrid() {
           </Link>
           <Link
             to="/Work"
-            className="smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3 rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
+            className="smartphone:h-1/4 flex flex-col row-start-5 col-start-4 col-span-4 row-span-3"
           >
           <m.section
             initial="initial"
@@ -129,7 +129,7 @@ export function Routesgrid() {
             onAnimationComplete={() => setHasAnimated(false)}
             transition={{ delay: 1.9, type: "spring", duration: 0.2 }}
             id="Work"
-            className="group h-full bg-gradient-to-br from-accent1lt to-accent1 text-w1  flex flex-col justify-center rounded-sm hover:rounded-xl transition-all duration-500 ease-in-out"
+            className="group h-full bg-gradient-to-br from-accent1lt to-accent1 text-w1  flex flex-col justify-center rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
           >
             <div className="flex flex-col smartphone:my-3 smartphone:justify-center">
                 <h1
