@@ -55,7 +55,7 @@ export function Work() {
               className={`group relative flex flex-col justify-center items-center z-20 w-1/2 h-full ${project.colourtext}`}
             >
               <div
-                className={`absolute w-full h-full ${project.colour} opacity-50`}
+                className={`absolute w-full h-full ${project.colour} opacity-75`}
               ></div>
               <div id="text" className="w-[400px] smartphone:w-[150px] z-30">
                 <h1 className="text-5xl smartphone:text-3xl">0{project.id}</h1>
