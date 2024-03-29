@@ -33,13 +33,13 @@ export function Routesgrid() {
             >
               <div className="flex flex-col smartphone:my-3 smartphone:items-center smartphone:justify-center">
                 <h1
-                  className={`text-7xl smartphone:text-5xl drop-shadow-2xl text-whitee laptop:mt-auto smartphone:mx-5 mx-14
+                  className={`text-7xl laptop:text-6xl smartphone:text-5xl drop-shadow-2xl text-whitee laptop:mt-auto smartphone:mx-5 mx-14
                   group-hover:translate-x-3 transition-all duration-300 ease-in-out ubuntu tracking-wide`}
                 >
                   About <span className="text-accent1">Me!</span>
                 </h1>
                 <h2
-                  className={`text-xl smartphone:text-sm  mb-auto smartphone:mx-5 mx-20 flex gap-1 items-center 
+                  className={`text-xl laptop:text-lg smartphone:text-sm  mb-auto smartphone:mx-5 mx-20 flex gap-1 items-center 
                 group-hover:translate-x-5 transition-all duration-500 ease-in-out ibm-plexmid tracking-tighter`}
                 >
                   Lets get personal!
@@ -133,13 +133,13 @@ export function Routesgrid() {
           >
             <div className="flex flex-col smartphone:my-3 smartphone:justify-center">
                 <h1
-                  className={`text-7xl smartphone:text-5xl drop-shadow-2xl text-whitee laptop:mt-auto smartphone:mx-5 mx-14
+                  className={`text-7xl laptop:text-6xl smartphone:text-5xl drop-shadow-2xl text-whitee laptop:mt-auto smartphone:mx-5 mx-14
                   group-hover:translate-x-3 transition-all duration-300 ease-in-out ubuntu tracking-wider`}
                 >
                   My <span className="text-bg2">Work</span>
                 </h1>
                 <h2
-                  className={`text-xl smartphone:text-sm  mb-auto mt-2 smartphone:mx-8 mx-20 flex gap-1 items-center 
+                  className={`text-xl laptop:text-lg smartphone:text-sm  mb-auto mt-2 smartphone:mx-8 mx-20 flex gap-1 items-center 
                   group-hover:translate-x-5 transition-all duration-300 ease-in-out ibm-plexmid tracking-tighter`}
                 >
                   My Creative Endeavors

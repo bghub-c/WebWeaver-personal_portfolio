@@ -84,7 +84,7 @@ export function Skills() {
           y: 0,opacity:1
         }}
         transition={{
-          duration:0.5, delay: 1.7, ease:"easeInOut", type:"spring" 
+          duration:0.5, delay: 1.7, ease:"easeInOut", type:"tween"
         }}
           id="buttons"
           className="flex justify-center  text-4xl laptop:text-2xl smartphone:text-xl mt-14 laptop:mt-4">

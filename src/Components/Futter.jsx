@@ -13,8 +13,8 @@ return(
     <div className={`${loc?"w-11/12 mt-5 border-t bg-bg2 text-w1 border-w1 ":" bg-bg1 text-w1 "} mx-auto  h-fit flex  justify-center`}>
     <section  id="Footer" className="flex justify-between items-center smartphone:flex-col  border-white mb-4  w-8/12 smartphone:w-full">
         <div className="group ml-5 p-2 mt-7 smartphone:items-center">
-        <m.h1 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.6, type:"spring"}} className="flex smartphone:flex-col smartphone:text-5xl items-end smartphone:items-center text-8xl ubuntu">Drop a hello!<HandWaving className="transition-colors duration-300 ml-2 smartphone:hidden  group-hover:text-green-900" size={100} weight="duotone" /></m.h1>
-        <m.h2 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.7, type:"spring"}} className="text-2xl smartphone:text-md text-center smartphone:ml-0 py-3 ibm-plex">Lets create dope stuff together!</m.h2>
+        <m.h1 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.6, type:"spring"}} className="flex smartphone:flex-col laptop:text-7xl smartphone:text-5xl items-end smartphone:items-center text-8xl ubuntu">Drop a hello!<HandWaving className="transition-colors w-24 laptop:w-16 duration-300 ml-2 smartphone:hidden  group-hover:text-green-900" size={"100%"} weight="duotone" /></m.h1>
+        <m.h2 initial={{y:10, opacity:0.5 }} whileInView={{y:0, opacity:1}} transition={{delay:0.7, type:"spring"}} className="text-2xl laptop:text-xl smartphone:text-md  text-center smartphone:ml-0 py-3 ibm-plex">Lets create dope stuff together!</m.h2>
         </div>
         <div className="flex flex-col justify-start smartphone:justify-center">
         <ul className="flex smartphone:justify-center ">
