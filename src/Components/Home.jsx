@@ -30,7 +30,7 @@ export function Home() {
           }}
           className=" w-full h-1/2 pl-32 smartphone:pl-4 flex flex-col justify-center"
         >
-          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl text-8xl laptop:text-7xl tracking-wider smartphone:text-3xl text-accent3 ubuntu">
+          <p className=" drop-shadow-text-lg smartphone:drop-shadow-2xl laptop:drop-shadow-text-sm text-8xl laptop:text-6xl tracking-wider smartphone:text-3xl text-accent3 ubuntu">
             {"Such a delight to see you here!"}
           </p>
         </m.span>
@@ -49,8 +49,8 @@ export function Home() {
           }}
           className=" p-8 z-10 row-start-2 flex flex-col justify-start "
         >
-          <p className="pl-28 z-10 smartphone:pl-0 drop-shadow-xl text-3xl laptop:text-xl smartphone:text-sm tracking-tight text-bg1 font-semibold ibm-plexregular ">
-          👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
+          <p className="pl-28 z-10 smartphone:pl-0 drop-shadow-xl text-3xl laptop:text-base smartphone:text-sm tracking-tight text-bg1 font-semibold ibm-plexregular ">
+          👋 Hey! {"I'm"} Mohd Bilal, <br /> your go-to for awesome interactions and all things frontend. <br /> {"Let's"}  create digital magic together! <br /><span className="text-2xl smartphone:text-sm laptop:text-base font-semibold pt-12 ">Ready to dive in? 🚀</span></p>
         </m.span>
         <span className="grid place-content-center z-50 bg-w1">
           <m.svg

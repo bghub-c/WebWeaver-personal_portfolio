@@ -8,7 +8,7 @@ export function Work() {
       src: "/picc5.jpg",
       subtitle:
         "Crafted with React.js and Tailwind CSS with beautiful animations with Framer motion featuring my expertise and project highlights.",
-      skills: [{ id: 11,comp:<><Atom size={38} weight="duotone" className="mx-1 group-hover:text-react group-hover:scale-105 transition-all duration-300" /> <FramerLogo size={38} weight="duotone" className="mx-1 group-hover:text-w2 group-hover:scale-105 transition-all duration-300" /> <Waves size={32} weight="duotone" className="mx-1 group-hover:text-blue-300 group-hover:scale-105 transition-all duration-300" /> </> }],
+      skills: <><Atom size={38} weight="duotone" className="mx-1 group-hover:text-react group-hover:scale-105 transition-all duration-300" /> <FramerLogo size={38} weight="duotone" className="mx-1 group-hover:text-w2 group-hover:scale-105 transition-all duration-300" /> <Waves size={32} weight="duotone" className="mx-1 group-hover:text-blue-300 group-hover:scale-105 transition-all duration-300" /> </>,
       colour: "bg-bg3",
       colourtext: "text-w1",
     },
@@ -18,7 +18,7 @@ export function Work() {
       src: "/Landingpage.mp4",
       subtitle:
         "Designed using HTML, Tailwind CSS, and JavaScript to create captivating parallax effects that enhance user engagement and elevate the visual appeal.",
-        skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> }],      colour: "bg-bg1",
+        skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> ,      colour: "bg-bg1",
       colourtext: "text-zinc-300",
     },
     {
@@ -27,7 +27,7 @@ export function Work() {
       src: "/picc10.jpg",
       subtitle:
         "Utilizing HTML, Tailwind CSS, JavaScript, and API integration for efficient link management.",
-      skills: [{ id: 13, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /></> }],
+      skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /></>,
       colour: "bg-green-500",
       colourtext: "text-w1",
     },
@@ -36,7 +36,7 @@ export function Work() {
       title: "Music player",
       src: "/Musicplayer.mp4",
       subtitle: "Developed using HTML, Tailwind CSS, and Howler.js.",
-      skills: [{ id: 14, comp:<><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> }],
+      skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> ,
       colour: "bg-w1",
       colourtext: "text-bg1",
     },
@@ -69,14 +69,12 @@ export function Work() {
                   {project.subtitle}
                 </h3>
                 <div id="techstack">
-                  {project.skills.map((skill) => (
                     <div
-                      key={skill.id}
                       className="flex flex-row mt-3"
                     >
-                      {skill.comp}
+                      {project.skills}
                     </div>
-                  ))}
+                  
                 </div>
               </div>
             </section>

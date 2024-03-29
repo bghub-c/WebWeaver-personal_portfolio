@@ -71,13 +71,13 @@ export function Routesgrid() {
               className="group bg-gradient-to-br from-bg2 to-bg1 text-w2 h-full flex flex-col rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
               <h1
-                className={`my-1  text-6xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6 group-hover:translate-x-2
+                className={`my-1  text-6xl laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 laptop:mx-6 smartphone:mx-6 group-hover:translate-x-2
                transition-all duration-300 ease-in-out ubuntu tracking-wider`}
               >
                 Skill <span className="text-accent2">Stack</span>
               </h1>
               <h2
-                className={`text-lg smartphone:text-sm  mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4
+                className={`text-lg smartphone:text-sm  laptop:text-sm mb-auto ml-14 laptop:ml-10 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4
                transition-all duration-300 ease-in-out ibm-plexmid tracking-tighter`}
               >
                 Skills I Bring to the Table
@@ -102,12 +102,12 @@ export function Routesgrid() {
               className="group bg-gradient-to-br from-accent2 to-accent2lt text-w2 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
               <h1
-                className={`my-1 text-6xl  smartphone:text-5xl  mt-auto mx-10 smartphone:mx-6  group-hover:translate-x-2 transition-all duration-300 ease-in-out ubuntu tracking-wider`}
+                className={`my-1 text-6xl laptop:text-5xl  smartphone:text-5xl  mt-auto mx-10 laptop:mx-6 smartphone:mx-6  group-hover:translate-x-2 transition-all duration-300 ease-in-out ubuntu tracking-wider`}
               >
                 X-<span className="text-bg1">Tras</span>
               </h1>
               <h2
-                className={`text-lg smartphone:text-sm mb-auto mx-14 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4 transition-all duration-500 ease-in-out ibm-plexmid tracking-tight`}
+                className={`text-lg smartphone:text-sm laptop:text-sm mb-auto ml-14 laptop:ml-10 smartphone:mx-10 flex gap-2 items-center group-hover:translate-x-4 transition-all duration-500 ease-in-out ibm-plexmid tracking-tight`}
               >
                 Stuff that I&#x27;m into
                 <ArrowCircleRight
