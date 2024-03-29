@@ -1,5 +1,5 @@
 import {m} from "framer-motion"
-import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs } from "@phosphor-icons/react";
+import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs, Barricade } from "@phosphor-icons/react";
 export function Work() {
   const projects = [
     {
@@ -44,7 +44,9 @@ export function Work() {
   return (
     <>
       <m.section  initial={{opacity:0}} animate={{opacity:1}} transition={{ delay: 0.75, duration: 1, ease:"easeInOut" }}
-       className="w-screen h-full flex flex-col justify-start items-center text-bg2">
+       className="relative w-screen h-full flex flex-col justify-start items-center text-bg2">
+        <div className="absolute z-40 w-full h-screen grayscale bg-black opacity-90"></div>
+        <div className="absolute z-50 w-full h-screen grayscale text-w1 grid place-content-center text-7xl"><Barricade size={200} weight="duotone" />  Under Construction </div>
         {projects.map((project) => (
           <section
             key={project.id}
