@@ -13,13 +13,13 @@ export function Introduction() {
         <div className="w-1/2 smartphone:w-11/12">
           <m.h1 initial={{ y: 300 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.7, duration: 0.5, ease: "easeInOut", type:"spring" }} className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 laptop:mt-36 smartphone:mt-16  flex items-end tracking-widest drop-shadow-text-lg">
+            transition={{ delay: 1.3, duration: 0.5, ease: "easeInOut", type:"spring" }} className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 laptop:mt-36 smartphone:mt-16  flex items-end tracking-widest drop-shadow-text-lg">
             Hello There <span className="text-accent1 ml-4 h-full">!</span>
           </m.h1>
           <m.h2
             initial={{ y: 300 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.9, duration: 0.5, ease: "easeInOut", type:"spring" }}
+            transition={{ delay: 1.5, duration: 0.5, ease: "easeInOut", type:"spring" }}
             className=" mt-16 laptop:mt-14 text-3xl laptop:text-2xl smartphone:text-lg smartphone:text-center tracking-normal  ubuntu"
           >
             Ahoy! <span className="coolfont mr-2 ml-2 text-accent1 tracking-widest">Mohd Bilal</span>, your web wizard from Lucknow, India. <br className="smartphone:hidden" />
@@ -27,9 +27,9 @@ export function Introduction() {
             <span className=" tracking-widestestcum ml-1 ">weave wonders</span> together. Cheers!
           </m.h2>
           <m.div
-            initial={{ y: 320 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 1.95, duration: 0.7, ease: "easeInOut", type:"tween" }}
+            initial={{ y: 200, opacity:0.65 }}
+            animate={{ y: 0, opacity:1 }}
+            transition={{ delay: 1.95, duration: 0.5, ease: "easeInOut", type:"tween" }}
             className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center tracking-tight"
           >
             <p className="  text-2xl laptop:text-lg smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">
