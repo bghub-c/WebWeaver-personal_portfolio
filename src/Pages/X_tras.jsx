@@ -7,7 +7,7 @@ export function X_tras() { window.scrollTo({top:0})
     target: targetRef,
   });
   const sc=window.innerWidth<720?0:0.02;
-  const x =useTransform(scrollYProgress, [sc, 1], ["1%", "-85%"]);
+  const x =useTransform(scrollYProgress, [sc, 1], ["2%", "-85%"]);
 
   const cards = useMemo(() => [
     { url: "/picc1.jpeg", title: "Sunshine Bloom", subtitle: "kuch bhi", id: 1 },

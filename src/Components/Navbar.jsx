@@ -1,4 +1,4 @@
-import { m } from "framer-motion"; import { Link } from "react-router-dom"; import PropTypes from 'prop-types'; import { InstagramLogo, Download,TwitterLogo,GithubLogo,LinkedinLogo,ArrowCircleLeft  } from "@phosphor-icons/react";
+import { m } from "framer-motion"; import { Link } from "react-router-dom"; import PropTypes from 'prop-types'; import { InstagramLogo, Download,GithubLogo,LinkedinLogo,ArrowCircleLeft  } from "@phosphor-icons/react";
 export function Navbar({loc}){
     var accentcol="";
     
@@ -31,7 +31,6 @@ export function Navbar({loc}){
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200  transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-insta p-3/4"> <a target="_blank" href="https://www.instagram.com/mohd.bilal__?igsh=MW9ydDcwcTR4dmVjaQ=="><InstagramLogo size={32} weight="duotone" /></a></li>
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200  transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-lnkin  p-3/4"> <a target="_blank" href="https://www.linkedin.com/in/mohd--bilal--?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedinLogo size={32} weight="duotone" /> </a></li>
                 <li className="h-full w-1/5 m-3 backdrop-brightness-200  transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-zinc-500  p-3/4"> <a target="_blank" href="https://github.com/bghub-c"><GithubLogo size={32} weight="duotone" /> </a></li>
-                <li className="h-full w-1/5 m-3 backdrop-brightness-200  transition-all ease-in-out duration-200 hover:scale-105 hover:-translate-y-1 hover:text-blue-500  p-3/4"> <a target="_blank" href=""><TwitterLogo size={32} weight="duotone" /> </a></li>
                 <li className={`h-full my-3 border-2 ${loc=="/"?"border-bg1 hover:text-green-300 hover:bg-bg2":"border-w1 hover:text-bg2 hover:bg-w1"} ubuntu transition-all ease-in-out duration-700  w-full bg-bk laptop:text-lg rounded-full overflow-hidden`}><a href="/Mohd Bilal.pdf" download className="flex gap-1  items-center smartphone:pr-2 pl-2 tracking-wide">Resume<Download className=" p-1 smartphone:mr-0 mr-1" size={32} weight="duotone" /></a></li>
             </ul>
         </m.nav>

@@ -13,7 +13,7 @@ export function Introduction() {
         <div className="w-1/2 smartphone:w-11/12">
           <m.h1 initial={{ y: 300 }}
             animate={{ y: 0 }}
-            transition={{ delay: 1.3, duration: 0.5, ease: "easeInOut", type:"spring" }} className="text-7xl smartphone:text-4xl coolfont ml-6 mt-60 laptop:mt-36 smartphone:mt-16  flex items-end tracking-widest drop-shadow-text-lg">
+            transition={{ delay: 1.3, duration: 0.5, ease: "easeInOut", type:"spring" }} className="text-7xl smartphone:text-4xl coolfont ml-6 mt-56 laptop:mt-36 smartphone:mt-16  flex items-end tracking-widest drop-shadow-text-lg">
             Hello There <span className="text-accent1 ml-4 h-full">!</span>
           </m.h1>
           <m.h2
@@ -29,7 +29,7 @@ export function Introduction() {
           <m.div
             initial={{ y: 200, opacity:0.65 }}
             animate={{ y: 0, opacity:1 }}
-            transition={{ delay: 1.95, duration: 0.5, ease: "easeInOut", type:"tween" }}
+            transition={{ delay: 1.95, duration: 0.75, ease: "easeInOut", type:"tween" }}
             className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center tracking-tight"
           >
             <p className="  text-2xl laptop:text-lg smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">
