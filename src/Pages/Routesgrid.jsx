@@ -17,7 +17,7 @@ export function Routesgrid() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.80, ease: "easeInOut" }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
           className="app2 bg-bg1  h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
         >
           <Link
@@ -27,7 +27,7 @@ export function Routesgrid() {
             <m.section variants={animation}
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
-              transition={{ delay: 0.3, type: "spring", duration: 0.2 }}
+              transition={{ delay: 0.8, type: "spring", duration: 0.2 }}
               id="abt"
               className="bg-gradient-to-br from-white to-w2 group h-full text-bg1 flex justify-between items-center rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
@@ -40,12 +40,12 @@ export function Routesgrid() {
                 </h1>
                 <h2
                   className={`text-xl laptop:text-lg smartphone:text-sm  mb-auto smartphone:mx-5 mx-20 flex gap-1 items-center 
-                group-hover:translate-x-5 transition-all duration-500 ease-in-out ibm-plexmid tracking-tighter`}
+                group-hover:translate-x-5 transition-transform duration-500 ease-in-out ibm-plexmid tracking-tighter`}
                 >
                   Lets get personal!
                   <ArrowCircleRight
                     size={32}
-                    className={`text-accent1lt opacity-85 transition-all ease-in-out duration-300 group-hover:translate-x-3`}
+                    className={`text-accent1lt opacity-85 transition-transform ease-in-out duration-300 group-hover:translate-x-3`}
                     weight="duotone"
                   />
                 </h2>
@@ -97,7 +97,7 @@ export function Routesgrid() {
               initial="initial"
               whileInView={hasAnimated ? "":"Inview"}
               variants={animation}
-              transition={{ delay: 1.4, type: "spring", duration: 0.2 }}
+              transition={{ delay: 1, type: "spring", duration: 0.2 }}
               id="projects"
               className="group bg-gradient-to-br from-accent2 to-accent2lt text-w2 flex flex-col h-full row-start-5 col-start-2 col-span-2 row-span-3 rounded-xl hover:rounded-sm transition-all duration-100 ease-in-out"
             >
@@ -127,7 +127,7 @@ export function Routesgrid() {
             whileInView={hasAnimated ? "":"Inview"}
             variants={animation}
             onAnimationComplete={() => setHasAnimated(false)}
-            transition={{ delay: 1.9, type: "spring", duration: 0.2 }}
+            transition={{ delay: 1.1, type: "spring", duration: 0.2 }}
             id="Work"
             className="group h-full bg-gradient-to-br from-accent1lt to-accent1 text-w1  flex flex-col justify-center rounded-xl hover:rounded-sm transition-all duration-500 ease-in-out"
           >

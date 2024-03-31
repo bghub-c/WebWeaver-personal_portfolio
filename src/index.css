@@ -69,17 +69,6 @@ opacity: 0.1;
 background-image: radial-gradient(#ffffff29 1.75px, #ffffff00 1.75px);
 background-size: 35px 35px;
 }
-.ralewaydots{
-  font-family: "Raleway Dots", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.sourcecodepro {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 .ibm-plex{
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -94,12 +83,12 @@ background-size: 35px 35px;
 
 .ibm-plexmid{
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 .ubuntu{
   font-family: "Ubuntu Condensed", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 .raleway{

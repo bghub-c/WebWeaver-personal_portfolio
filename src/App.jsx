@@ -24,7 +24,7 @@ function App() {
       </m.div>
       <div className={`h-screen ${divdisplay}`}></div>
       <m.div initial={{ opacity: 0 }}  animate={{ opacity: 1 }} transition={{ duration: 0.25, ease: "easeInOut" }} id="mainwrapper"
-        className="transform-gpu  w-screen h-full relative flex flex-col scroll-smooth"
+        className="transform-gpu transition-transform w-screen h-full relative flex flex-col scroll-smooth"
       >
         <AnimatePresence>
           <Routes location={location} key={location.key}>

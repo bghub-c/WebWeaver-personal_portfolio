@@ -1,6 +1,6 @@
 import {m} from "framer-motion"
 import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs, Barricade } from "@phosphor-icons/react";
-export function Work() {
+export function Work() {  window.scrollTo({top:0})
   const projects = [
     {
       id: 1,
