@@ -107,7 +107,7 @@ export function Skills() {  window.scrollTo({top:0})
             <AnimatePresence>
               {skills.map((skill) => (
                 <React.Fragment key={skill.id}> 
-                    <m.span initial={{opacity:0,y:-1*popy}} animate={{opacity:1,y:0,z:pushes}} exit={{opacity:0,y:-1*popy}} className=" flex flex-col-reverse ">
+                    <m.span initial={{opacity:0,y:-1*popy}} animate={{opacity:1,y:0,z:pushes}} exit={{opacity:0,y:-1*popy}} className="flex flex-col-reverse ">
                   <div className="w-56 laptop:w-  h-6 rad border-2 -translate-y-2 -mb-10 bg-w1 border-accent2"></div>
                   <div className="w-56  bg-w1 z-10 translate-y-1 border-x-2 border-accent2 flex justify-center items-end">
                     <h1 className="ibm-plexmid text-3xl text-center smartphone:text-2xl laptop:text-lg text-accent2lt mt-4 mb-2 translate-y-1">

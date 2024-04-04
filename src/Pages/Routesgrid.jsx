@@ -18,7 +18,7 @@ export function Routesgrid() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.75, ease: "easeInOut" }}
-          className="app2 bg-bg1  h-screen w-screen grid grid-cols-8 grid-rows-8 gap-3 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
+          className="app2 bg-bg1  h-screen w-screen grid grid-cols-8 grid-rows-8 gap-4 smartphone:p-5 smartphone:mt-24 smartphone:flex flex-col"
         >
           <Link
             to="/Introduction"
