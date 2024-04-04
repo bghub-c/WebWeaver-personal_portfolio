@@ -89,12 +89,12 @@ export function Skills() {  window.scrollTo({top:0})
           className="transition-transform ease-out duration-500 transform-gpu flex justify-center  text-4xl laptop:text-2xl smartphone:text-xl ibm-plexmid tracking-tighter mt-14 laptop:mt-4">
           <button
             onClick={popSkill}
-            className="flex group justify-center items-center  h-fit mx-auto smartphone:mx-2 py-4 smartphone:py-2 laptop:py-2  px-14 smartphone:px-4  rounded-full  text-bg2  bg-w1 font-semibold smartphone:tracking-tighter transition-all duration-500  hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_#4361ee] shadow-sm shadow-w1 active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none ">
+            className="flex group justify-center items-center  h-fit mx-auto smartphone:mx-2 py-4 smartphone:py-2 laptop:py-2  px-14 smartphone:px-4  rounded-full  text-bg2  bg-w1 font-semibold smartphone:tracking-tighter transition-all duration-300  hover:translate-y-[-5px] hover:shadow-[5px_5px_0px_#4361ee] shadow-sm shadow-w1 active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none ">
             pop(<span className="transition-all duration-700 group-hover:text-accent2lt px-1 ">skill</span>) <UploadSimple size={"100%"} className="mx-2 w-10 laptop:w-8 smartphone:w-6 smartphone:mx-1 group-hover:-translate-y-1 transition-all duration-500" />
           </button>
           <button
             onClick={pushSkill}
-            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-2 py-4 laptop:py-2 smartphone:py-2 px-14 smartphone:px-4  rounded-full text-bg2 bg-w1  font-semibold smartphone:tracking-tighter transition-all duration-500 hover:translate-y-[4px] hover:shadow-[4px_-4px_0px_#4361ee] shadow-sm shadow-w1 active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none ">
+            className="flex group justify-center items-center h-fit mx-auto smartphone:mx-2 py-4 laptop:py-2 smartphone:py-2 px-14 smartphone:px-4  rounded-full text-bg2 bg-w1  font-semibold smartphone:tracking-tighter transition-all duration-300 hover:translate-y-[5px] hover:shadow-[5px_-5px_0px_#4361ee]  shadow-sm shadow-w1 active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none ">
             push(<span className="transition-all duration-700 group-hover:text-accent2lt px-1">skill</span>) <DownloadSimple size={"100%"} className="mx-2 w-10 laptop:w-8 smartphone:w-6 smartphone:mx-1 group-hover:translate-y-1 transition-all duration-500"/>
           </button>
         </m.div>

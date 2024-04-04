@@ -46,8 +46,8 @@ export function X_tras() { window.scrollTo({top:0})
               ease:"easeInOut"
             }} className="text-3xl laptop:text-2xl w-full smartphone:text-xl ml-24 smartphone:ml-14 smartphone:mt-10 ubuntu tracking-wide smartphone:tracking-normal"> <span className="text-accent2lt">:)</span> Some clicks that {"I'm"} proud of <span className="hidden text-w1 smartphone:flex mt-5 ml-5 text-sm">(Swipe down to see them slide)</span></m.h2>
             </section>
-            <div className="sticky top-0 mt-8 flex h-1/5 items-center overflow-hidden">
-              <m.div style={{x}} initial={{y:300, opacity:0.65}} animate={{y:0, opacity:1}} transition={{ delay: 2.3, duration: 0.5, ease: "easeInOut", type:"tween" }} className="flex gap-4 smartphone:gap-2 transition-transform smartphone:ease-linear ease-out duration-700 transform-gpu">
+            <div className="sticky top-0 mt-8 smartphone:-mt-20 flex h-1/5 items-center overflow-hidden">
+              <m.div style={{x}} initial={{y:300, opacity:0.65}} animate={{y:0, opacity:1}} transition={{ delay: 2.3, duration: 0.5, ease: "easeInOut", type:"tween" }} className="flex gap-4 smartphone:gap-2 transition-transform smartphone:ease-linear ease-out smartphone:duration-300 duration-700 transform-gpu">
                 {cards.map((card) => (
                   <div key={card.id} className="group rounded-md relative h-[600px] w-[400px] laptop:h-[500px] smartphone:h-[500px] smartphone:w-[256px] overflow-hidden">
                     <img src={card.url} loading="lazy" className="absolute w-full h-full object-cover inset-0 z-0 transition-all duration-500 ease-in-out group-hover:scale-110" alt={card.title}/>

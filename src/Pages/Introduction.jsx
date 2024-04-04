@@ -1,7 +1,6 @@
 import { m } from "framer-motion";
 import pfp from "../assets/billu.jpg";
-export function Introduction() {
-  window.scrollTo({top:0})
+export function Introduction() {window.scrollTo({top:0})
   return (
     <>
       <m.section
