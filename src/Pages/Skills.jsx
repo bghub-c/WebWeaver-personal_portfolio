@@ -86,7 +86,7 @@ export function Skills() {  window.scrollTo({top:0})
           duration:0.5, delay: 1.7, ease:"easeInOut", type:"tween"
         }}
           id="buttons"
-          className="flex justify-center  text-4xl laptop:text-2xl smartphone:text-xl ibm-plexmid tracking-tighter mt-14 laptop:mt-4">
+          className="transition-transform ease-out duration-500 transform-gpu flex justify-center  text-4xl laptop:text-2xl smartphone:text-xl ibm-plexmid tracking-tighter mt-14 laptop:mt-4">
           <button
             onClick={popSkill}
             className="flex group justify-center items-center  h-fit mx-auto smartphone:mx-2 py-4 smartphone:py-2 laptop:py-2  px-14 smartphone:px-4  rounded-full  text-bg2  bg-w1 font-semibold smartphone:tracking-tighter transition-all duration-500  hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_#4361ee] shadow-sm shadow-w1 active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none ">

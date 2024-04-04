@@ -28,10 +28,10 @@ export function Introduction() {
             <span className=" tracking-widestestcum ml-1 ">weave wonders</span> together. Cheers!
           </m.h2></div>
           <m.div
-            initial={{ y: 300, opacity:0.45 }}
+            initial={{ y: 200, opacity:0.65 }}
             animate={{ y: 0, opacity:1 }}
             transition={{ delay: 1.95, duration: 0.75, ease: "easeInOut", type:"tween" }}
-            className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center tracking-tight"
+            className="w-full mt-12 grid grid-flow-col smartphone:grid-flow-row smartphone:text-center tracking-tight transition-transform smartphone:duration-300 duration-500 ease-out  transform-gpu"
           >
             <p className="  text-2xl laptop:text-lg smartphone:text-xl tracking-tighter mt-6 smartphone:mt-1 ibm-plexregular leading-10">
             Consider me your go-getter enthusiast
