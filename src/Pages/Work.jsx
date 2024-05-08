@@ -1,5 +1,5 @@
 import {m} from "framer-motion"
-import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs, Barricade } from "@phosphor-icons/react";
+import { FileHtml, Atom,FramerLogo, Waves, FileCss, FileJs } from "@phosphor-icons/react";
 export function Work() {  window.scrollTo({top:0})
   const projects = [
     {
