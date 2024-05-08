@@ -5,7 +5,7 @@ export function Work() {  window.scrollTo({top:0})
     {
       id: 1,
       title: "Portfoio",
-      src: "/picc5.jpg",
+      src: "/PortfolioCollage.jpg",
       subtitle:
         "Crafted with React.js and Tailwind CSS with beautiful animations with Framer motion featuring my expertise and project highlights.",
       skills: <><Atom size={38} weight="duotone" className="mx-1 group-hover:text-react group-hover:scale-105 transition-all duration-300" /> <FramerLogo size={38} weight="duotone" className="mx-1 group-hover:text-w2 group-hover:scale-105 transition-all duration-300" /> <Waves size={32} weight="duotone" className="mx-1 group-hover:text-blue-300 group-hover:scale-105 transition-all duration-300" /> </>,
@@ -15,7 +15,7 @@ export function Work() {  window.scrollTo({top:0})
     {
       id: 2,
       title: "ParallaxLandingPAge",
-      src: "/Landingpage.mp4",
+      src: "/photo.jpg",
       subtitle:
         "Designed using HTML, Tailwind CSS, and JavaScript to create captivating parallax effects that enhance user engagement and elevate the visual appeal.",
         skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> ,      colour: "bg-bg1",
@@ -24,7 +24,7 @@ export function Work() {  window.scrollTo({top:0})
     {
       id: 3,
       title: "Url shortener",
-      src: "/picc10.jpg",
+      src: "/Url_Shortener.png",
       subtitle:
         "Utilizing HTML, Tailwind CSS, JavaScript, and API integration for efficient link management.",
       skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-bg1 group-hover:scale-105 transition-all duration-300"  /></>,
@@ -34,7 +34,7 @@ export function Work() {  window.scrollTo({top:0})
     {
       id: 4,
       title: "Music player",
-      src: "/Musicplayer.mp4",
+      src: "/MusicPlayer.png",
       subtitle: "Developed using HTML, Tailwind CSS, and Howler.js.",
       skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> ,
       colour: "bg-w1",
@@ -45,8 +45,8 @@ export function Work() {  window.scrollTo({top:0})
     <>
       <m.section  initial={{opacity:0}} animate={{opacity:1}} transition={{ delay: 0.75, duration: 1, ease:"easeInOut" }}
        className="relative w-screen h-full flex flex-col justify-start items-center text-bg2">
-        <div className="absolute z-40 w-full h-full grayscale bg-black opacity-90"></div>
-        <div className="absolute z-50 w-full h-full grayscale text-w1 grid place-content-center text-7xl"><span className="text-red-500"> <Barricade className="mx-auto" size={200} weight="duotone" /></span>  Under Construction !</div>
+        <div className="absolute z-40 w-full h-full grayscale bg-black opacity-90 hidden"></div>
+        <div className="absolute z-50 w-full h-full grayscale text-w1 grid place-content-center text-7xl hidden"><span className="text-red-500"> <Barricade className="mx-auto" size={200} weight="duotone" /></span>  Under Construction !</div>
         {projects.map((project) => (
           <section
             key={project.id}
@@ -78,10 +78,11 @@ export function Work() {  window.scrollTo({top:0})
                 </div>
               </div>
             </section>
-            <section id="2nd" className="w-1/2"></section>
+            <section id="2nd" className="w-1/2">
+            </section>
             <img
               src={project.src}
-              className="absolute h-full z-10 object-cover "
+              className="absolute  h-full z-10 object-fill "
               alt=""
             />
           </section>
