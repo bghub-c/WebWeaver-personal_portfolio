@@ -82,7 +82,7 @@ export function Work() {  window.scrollTo({top:0})
             </section>
             <img
               src={project.src}
-              className="absolute  h-full z-10 object-fill "
+              className="absolute  h-full w-full z-10 object-fill "
               alt=""
             />
           </section>
