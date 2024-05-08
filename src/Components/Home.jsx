@@ -20,7 +20,7 @@ export function Home() {
             y: -120,
           }}
           animate={{
-            y: [-110,0]
+            y: [-115,0]
           }}
           transition={{
             duration:0.7,
