@@ -36,7 +36,7 @@ export function Work() {  window.scrollTo({top:0})
       title: "Music player",
       src: "/MusicPlayer.png",
       subtitle: "Developed using HTML, Tailwind CSS, and Howler.js.",
-      skills: <><FileHtml size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1 group-hover:text-w1 group-hover:scale-105 transition-all duration-300"  /></> ,
+      skills: <><FileHtml size={32} weight="duotone" className="mx-1  group-hover:scale-105 transition-all duration-300"  /> <FileCss size={32} weight="duotone" className="mx-1  group-hover:scale-105 transition-all duration-300" /> <FileJs size={32} weight="duotone" className="mx-1  group-hover:scale-105 transition-all duration-300"  /></> ,
       colour: "bg-w1",
       colourtext: "text-bg1",
     },
@@ -49,7 +49,7 @@ export function Work() {  window.scrollTo({top:0})
           <section
             key={project.id}
             id="Currentproject"
-            className="relative flex smartphone:flex-col w-full px-2 smartphone:h-[350px] h-screen ubuntu"
+            className="relative flex smartphone:flex-col w-full px-2 smartphone:h-[300px] h-screen ubuntu"
           >
             <section
               id="1st"
@@ -63,7 +63,7 @@ export function Work() {  window.scrollTo({top:0})
                 <h2 className="text-3xl smartphone:text-xl pt-3">
                   {project.title}
                 </h2>
-                <h3 className="text-xl smartphone:text-sm pt-1 ">
+                <h3 className="text-xl  smartphone:text-sm pt-1 ">
                   {project.subtitle}
                 </h3>
                 <div id="techstack">
