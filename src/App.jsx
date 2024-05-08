@@ -12,7 +12,6 @@ import { Work } from "./Pages/Work";
 function App() {
   const { scrollY } = useScroll();
   const bgcole=useTransform(scrollY, [150, 900], ["#e9ecef", "#0b090a"]);
-  console.log(bgcole) 
   const location = useLocation();
   const divdisplay = location.pathname == "/" ? "view" : "hidden";
   return (

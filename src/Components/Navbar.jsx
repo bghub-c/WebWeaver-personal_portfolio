@@ -8,7 +8,6 @@ export function Navbar({loc}){
         case "/work":{ accentcol="text-accent2lt"; break}
         default:{{ accentcol="text-accent1"}}
     }
-    console.log(accentcol)
     return(
         
         <div className="flex ">
@@ -38,5 +37,5 @@ export function Navbar({loc}){
     )
 }
 Navbar.propTypes = {
-    loc: PropTypes.bool.isRequired,
+    loc: PropTypes.string.isRequired,
   };
