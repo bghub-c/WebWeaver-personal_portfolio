@@ -1,9 +1,3 @@
-[build]
-  # Set the build command for your React app
-  command = "npm run build"
-  # Set the directory where the build output will be stored
-  publish = "build"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
