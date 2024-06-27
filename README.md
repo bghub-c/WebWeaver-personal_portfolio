@@ -1,9 +1,11 @@
-# My Portfolio Website
+# My Portfolio Website 
 
 - It's a beautifully designed, fully animated showcase of my skills and passion for development.
 - Built with React, Tailwind CSS, and Framer Motion, highlighting my expertise and creativity.
 - Dive in to explore my projects and see what drives my enthusiasm for coding.
 - Feedback is welcome!
+
+[Visit My Portfolio](https://webweaver-personalportfolio.netlify.app/)
   
 ## Technologies Used
 
@@ -21,7 +23,7 @@
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `[git clone https://github.com/your-username/your-portfolio.git](https://github.com/bghub-c/WebWeaver-personal_portfolio.git)`
+1. Clone the repository: `https://github.com/bghub-c/WebWeaver-personal_portfolio.git`
 2. Navigate into the project directory: `cd your-portfolio`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
