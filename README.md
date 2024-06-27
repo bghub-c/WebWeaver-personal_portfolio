@@ -21,7 +21,7 @@
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git`
+1. Clone the repository: `[git clone https://github.com/your-username/your-portfolio.git](https://github.com/bghub-c/WebWeaver-personal_portfolio.git)`
 2. Navigate into the project directory: `cd your-portfolio`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
